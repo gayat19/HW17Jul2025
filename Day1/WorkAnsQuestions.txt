@@ -1,0 +1,156 @@
+Question1
+Design the database for a shop which sells products
+Points for consideration
+  1) One product can be supplied by many suppliers
+  2) One supplier can supply many products
+  3) All customers details have to present
+  4) A customer can buy more than one product in every purchase
+  5) Bill for every purchase has to be stored
+  6) These are just details of one shop
+
+Note:- you do not have to store the shop details.
+
+Question2
+Case 1: A Simple Case on ER Modelling
+•	Goal – to demonstrate how to build an E-R model from a simple Statement of Objectives of a movie store. ( given very clearly in statement forms)
+Scenario:
+•	A video store rents movies to members.
+•	Each movie in the store has a title and is identified by a unique movie number.
+•	A movie can be in VHS, VCD, or DVD format.
+•	Each movie belongs to one of a given set of categories (action, adventure, comedy, ... )
+•	The store has a name and a (unique) phone number for each member.
+•	Each member may provide a favorite movie category (used for marketing purposes).
+•	There are two types of members: 
+o	Golden Members:
+o	Bronze Members:
+•	Using  their credit cards gold members can rent one or more movies and bronze members max. of one movie.  
+•	A member may have a number of dependents (with known names).
+•	Each dependent is allowed to rent one (1) movie at a time.
+ 
+
+
+Question3
+( A little more abstract case )
+Create an ER Diagram for a student registration system where the entities are Students, Instructors, Courses and Schedules. Consider all the possible pairings. (Given not in statements form, but in a summarized way)
+
+Assumptions:
+A student is taught by one or more Instructor
+A student joins only one course
+An Instructor  may teach any number of students
+An Instructor takes atleast one course
+A course will have only one schedule
+A course may have many students
+A course is taught by only one Instructor
+A schedule may be used for many courses 
+
+
+
+1) Print the storeid and number of orders for the store
+
+2) print the number of orders for every title
+
+3) print the publisher name and book name
+
+4) Print the author full name for al the authors
+
+5) Print the price or every book with tax (price + price*12.36/100)
+
+6) Print the author name, title name
+
+7) print the author name, title name and the publisher name
+
+8) Print the average price of books published by every publisher
+
+9) print the books published by 'Marjorie'
+
+10) Print the order numbers of books published by 'New Moon Books'
+
+11) Print the number of orders for every publisher
+
+12) print the order number , book name, quantity, price and the total price for all orders
+
+13) print he total order quantity for every book
+
+14) print the total order value for every book
+
+15) print the orders that are for the books published by the publisher for which 'Paolo' works for
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------
+
+Find the number of books published by each publisher located in New York, and show only those who have published more than 2 books. Order the results by number of books in descending order.
+
+List each author's state and the number of authors in that state, but only include states where there are more than 1 author and the state is not NULL. Order by the state name.
+
+Find the total quantity of books sold by each store for orders placed after January 1, 1992. Show only stores with sales greater than 500 units. Sort the result by total quantity sold.
+
+List each title's type and the average price of books in that type, only if the average price is greater than $20. Include only types where the publisher is not located in California. Sort by average price descending.
+
+Display the number of sales transactions per store, only for stores in California. Only show stores with more than 5 transactions, and sort the result by the number of transactions descending.
+
+
+
+
+
+use pubs;
+
+--Basic SELECT & WHERE
+--1.	List all authors and their cities.
+select au_fname, au_lname,city from authors
+select concat(au_fname,' ',au_lname),city from authors
+select concat(au_fname,' ',au_lname) Author_Fullname,city from authors
+--2.	List all publishers located in New York.
+select pub_id, pub_name, city, state
+from publishers
+where city = 'new york';
+--3.	Find all titles with a price greater than $15.
+select title from titles where price > $15;
+ 
+--4.	Get all books published after 1990.
+SELECT title, pubdate
+FROM titles
+WHERE YEAR(pubdate) > 1990;
+
+---5.	List the number of titles published by each publisher.
+select pub_id,count(title) Number_Of_Title from titles group by pub_id;
+---6.	Find the total sales quantity for each store.
+SELECT stor_id, SUM(qty) AS TotalQuantitySold
+FROM sales
+GROUP BY stor_id;
+--7.	Count the number of authors from each state.
+SELECT state, COUNT(*) AS NumberOfAuthors
+FROM authors
+GROUP BY state;
+--8.	List publishers who have published more than 3 titles.
+
+select pub_id,count(*) as 'title count' from titles group by pub_id having count(*)>3;
+--9.	Find stores with total sales over 500 units.
+SELECT stor_id, SUM(qty) AS TotalQuantitySold
+FROM sales
+GROUP BY stor_id
+HAVING SUM(qty) > 500;
+
+--Using ORDER BY
+--10.	List all books sorted by price (descending).
+select title,price from titles order by price desc;
+--11.	List all authors ordered by last name.
+select au_id,concat(au_fname,' ',au_lname) as 'Author Name' from authors order by au_lname;
+select au_id,au_fname,au_lname as 'Author Name' from authors order by 3;
+--12.	List all titles sorted by publication date (newest first).
+SELECT title, pubdate
+FROM titles
+ORDER BY pubdate DESC;
+ 
+ 
