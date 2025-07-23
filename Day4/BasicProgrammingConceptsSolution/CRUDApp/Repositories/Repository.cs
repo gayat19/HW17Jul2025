@@ -31,8 +31,8 @@ namespace CRUDApp.Repositories
 
         public IEnumerable<T> GetAll()
         {
-            if(list == null)
-                throw new NoEntriessInCollectionException();
+            
+            return list;
         }
 
         public abstract T GetById(K key);

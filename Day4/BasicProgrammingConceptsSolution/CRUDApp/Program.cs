@@ -7,7 +7,8 @@ namespace CRUDApp
 
         static void Main(string[] args)
         {
-            
+            EmployeeInteraction employeeInteraction = new();
+            employeeInteraction.StartInteraction();
         }
     }
 }

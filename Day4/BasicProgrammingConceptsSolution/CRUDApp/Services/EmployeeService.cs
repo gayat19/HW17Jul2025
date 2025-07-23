@@ -22,7 +22,14 @@ namespace CRUDApp.Services
         }
         public Employee AddEmployee(Employee employee)
         {
-            var department = _departmentRepository.GetById(employee.Department.Id);
+            Department department=null;
+            try
+            {
+                department = _departmentRepository.GetById(employee.Department.Id);
+            }
+            catch (Exception ex)
+            {
+            }
             if (department == null)
             {
                 employee.Department.Id = GenerateNextDepartmentId();

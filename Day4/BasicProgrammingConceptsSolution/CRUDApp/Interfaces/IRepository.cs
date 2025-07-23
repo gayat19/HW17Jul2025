@@ -14,6 +14,5 @@ namespace CRUDApp.Interfaces
         public T GetById(K key);
         public IEnumerable<T> GetAll();
 
-
     }
 }
