@@ -1,0 +1,57 @@
+🔹 Basic Stored Procedure Assignments
+Retrieve titles by publisher
+
+Write a stored procedure that accepts a publisher ID and returns all titles published by that publisher.
+
+Find author details by last name
+
+Create a stored procedure that accepts an author's last name and returns their full name and address.
+
+List books by price range
+
+Write a stored procedure that takes two parameters: min price and max price, and returns the titles within that range.
+
+🔹 Stored Procedures with Output Parameters
+Get total titles by a publisher
+
+Write a stored procedure that takes a publisher ID as input and returns the total number of titles published by them using an OUTPUT parameter.
+
+Author royalty percent lookup
+
+Create a stored procedure that takes a title ID and returns the average royalty percentage for that title using an output parameter.
+
+🔹 Stored Procedures with Insert/Update/Delete
+Add a new author
+
+Write a stored procedure to insert a new author into the authors table. Use parameters for all fields.
+
+Update book price
+
+Create a stored procedure that takes a title ID and a new price, then updates the price in the titles table.
+
+Delete a title
+
+Write a stored procedure that deletes a title based on its ID. Add a confirmation output parameter.
+
+🔹 Stored Procedures with Transactions and Error Handling(Optional)
+Add a new title with price and publisher
+
+Create a stored procedure that inserts a new title with details like title name, price, and publisher. Include error handling and rollback if the insert fails.
+
+Delete publisher and all related titles
+
+Write a stored procedure that deletes a publisher and all titles published by them using a transaction.
+
+🔹 Stored Procedures with Joins and Logic
+Get sales report by store
+
+Write a stored procedure that takes a store ID and returns the total quantity sold per title from that store.
+
+Top N selling books
+
+Create a stored procedure that accepts a number N and returns the top N best-selling titles by quantity.
+
+Find co-authors of a given author
+
+Create a procedure that accepts an author ID and lists other authors who have co-authored any book with them.
+

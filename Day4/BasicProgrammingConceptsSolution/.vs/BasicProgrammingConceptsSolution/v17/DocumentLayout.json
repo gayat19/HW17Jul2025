@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\services\\manageemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\services\\manageemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\exceptions\\nosuchentityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\exceptions\\nosuchentityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\exceptions\\noentriessincollectionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\exceptions\\noentriessincollectionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\models\\departmentemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\models\\departmentemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\crudapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\crudapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day4\\basicprogrammingconceptssolution\\crudapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}|CRUDApp\\CRUDApp.csproj|solutionrelative:crudapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "CRUDApp\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwEIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:34:00.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "CRUDApp\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:31:22.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "CRUDApp\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:29:21.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "CRUDApp\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:27:03.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Repositories\\Repository.cs",
+              "RelativeToolTip": "CRUDApp\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:19:50.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "CRUDApp\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T09:17:12.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Models\\Department.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Models\\Department.cs",
+              "RelativeToolTip": "CRUDApp\\Models\\Department.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T08:48:45.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NoSuchEntityException.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Exceptions\\NoSuchEntityException.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Exceptions\\NoSuchEntityException.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Exceptions\\NoSuchEntityException.cs",
+              "RelativeToolTip": "CRUDApp\\Exceptions\\NoSuchEntityException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:30:11.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NoEntriessInCollectionException.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Exceptions\\NoEntriessInCollectionException.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Exceptions\\NoEntriessInCollectionException.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Exceptions\\NoEntriessInCollectionException.cs",
+              "RelativeToolTip": "CRUDApp\\Exceptions\\NoEntriessInCollectionException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:27:41.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManageEmployee.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Services\\ManageEmployee.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Services\\ManageEmployee.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Services\\ManageEmployee.cs",
+              "RelativeToolTip": "CRUDApp\\Services\\ManageEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:19:59.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentEmployees.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Models\\DepartmentEmployees.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Models\\DepartmentEmployees.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Models\\DepartmentEmployees.cs",
+              "RelativeToolTip": "CRUDApp\\Models\\DepartmentEmployees.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T08:58:23.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CRUDApp",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\CRUDApp.csproj",
+              "RelativeDocumentMoniker": "CRUDApp\\CRUDApp.csproj",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\CRUDApp.csproj",
+              "RelativeToolTip": "CRUDApp\\CRUDApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-23T08:48:45.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Models\\Employee.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Models\\Employee.cs",
+              "RelativeToolTip": "CRUDApp\\Models\\Employee.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwDYAAACkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:02:39.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Program.cs",
+              "RelativeDocumentMoniker": "CRUDApp\\Program.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day4\\BasicProgrammingConceptsSolution\\CRUDApp\\Program.cs",
+              "RelativeToolTip": "CRUDApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:01:01.381Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
