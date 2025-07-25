@@ -8,6 +8,7 @@ namespace FirstAPI.Models
 {
     public class Department
     {
+        // ID is primary key by default
         public int Id { get; set; }
         public string Name { get; set; } =string.Empty;
 

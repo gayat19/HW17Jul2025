@@ -32,35 +32,14 @@ namespace FirstAPI.Services
             }
             if (department == null)
             {
-                employee.Department.Id = GenerateNextDepartmentId();
+                //employee.Department.Id = GenerateNextDepartmentId();
                 _departmentRepository.Add(employee.Department);
             }
-            employee.Id = GenerateNextEmployeeId();
+            //employee.Id = GenerateNextEmployeeId();
             _employeeRepository.Add(employee);
             return employee;
         }
-
-        private int GenerateNextDepartmentId()
-        {
-            var departments = _departmentRepository.GetAll();
-            if (departments.Any())
-            {
-                var max = departments.Max(d=>d.Id);
-                return ++max;
-            }
-            return 1;
-        }
-        private int GenerateNextEmployeeId()
-        {
-            var employees = _employeeRepository.GetAll();
-            if (employees.Any())
-            {
-                var max = employees.Max(d => d.Id);
-                return ++max;
-            }
-            return 101;
-        }
-
+       
         public Department GetDepartmentWiseEmployees(int departmentId)
         {
             var department = _departmentRepository.GetById(departmentId);

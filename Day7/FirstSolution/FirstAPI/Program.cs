@@ -1,8 +1,10 @@
 
+using FirstAPI.Contexts;
 using FirstAPI.Interfaces;
 using FirstAPI.Models;
 using FirstAPI.Repositories;
 using FirstAPI.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstAPI
 {
@@ -14,13 +16,25 @@ namespace FirstAPI
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                  .AddJsonOptions(options =>
+                  {
+                      options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                      options.JsonSerializerOptions.WriteIndented = true;
+                  });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddScoped<IRepository<int, Employee>, EmployeeRepository>();
-            builder.Services.AddScoped<IRepository<int, Department>, DepartmentRepository>();
+
+
+            builder.Services.AddDbContext<EmployeeManagementContext>(opts =>
+            {
+                opts.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
+            });
+
+            builder.Services.AddScoped<IRepository<int, Employee>, EmployeeRepositoryDB>();
+            builder.Services.AddScoped<IRepository<int, Department>, DepartmentRepositoryDb>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 

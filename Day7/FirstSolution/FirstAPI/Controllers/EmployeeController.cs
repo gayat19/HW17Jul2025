@@ -31,5 +31,21 @@ namespace FirstAPI.Controllers
             }
             
         }
+
+ 
+        [HttpGet]
+        public ActionResult<List<Employee>> Get()
+        {
+            try
+            {
+                var result = _employeeService.GetEmployees();
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return NotFound();
+            }
+        }
     }
 }

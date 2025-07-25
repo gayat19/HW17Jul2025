@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,32 @@
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\departmentrepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\departmentrepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\repositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\repositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\contexts\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\contexts\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\employeerepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\employeerepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +55,8 @@
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +74,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "FirstAPI\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAArwBcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T03:45:21.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentRepositoryDb.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentRepositoryDb.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\DepartmentRepositoryDb.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentRepositoryDb.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\DepartmentRepositoryDb.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:38:33.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositoryDB.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\RepositoryDB.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\RepositoryDB.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\RepositoryDB.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\RepositoryDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:20:43.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeRepositoryDB.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T07:33:53.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
               "RelativeToolTip": "FirstAPI\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T03:46:26.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Controllers\\WeatherForecastController.cs",
@@ -88,52 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:45:21.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IEmployeeService.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeService.cs",
-              "RelativeToolTip": "FirstAPI\\Interfaces\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:44:04.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\DepartmentRepository.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentRepository.cs",
-              "RelativeToolTip": "FirstAPI\\Repositories\\DepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:43:41.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Services\\EmployeeService.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Services\\EmployeeService.cs",
               "RelativeToolTip": "FirstAPI\\Services\\EmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T03:42:41.499Z",
               "EditorCaption": ""
@@ -141,19 +166,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "FirstAPI\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "EmployeeManagementContext.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Contexts\\EmployeeManagementContext.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Contexts\\EmployeeManagementContext.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Contexts\\EmployeeManagementContext.cs",
+              "RelativeToolTip": "FirstAPI\\Contexts\\EmployeeManagementContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:44:09Z",
+              "WhenOpened": "2025-07-25T06:35:16.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Repositories\\EmployeeRepository.cs",
@@ -167,40 +192,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\Repository.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\Repository.cs",
-              "RelativeToolTip": "FirstAPI\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:43:32.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\Employee.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\Employee.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:43:16.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Department.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Models\\Department.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Department.cs",
               "RelativeToolTip": "FirstAPI\\Models\\Department.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T03:43:13.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T03:43:41.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "FirstAPI\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T03:44:04.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "FirstAPI\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T03:44:09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Models\\Employee.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
+              "RelativeToolTip": "FirstAPI\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T03:43:16.002Z",
               "EditorCaption": ""
             }
           ]

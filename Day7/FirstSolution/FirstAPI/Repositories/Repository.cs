@@ -10,7 +10,7 @@ namespace FirstAPI.Repositories
 {
     public abstract class Repository<K, T> : IRepository<K, T> where T : class
     {
-        protected List<T> list = new List<T>();
+        protected static List<T> list = new List<T>();
 
         public T Add(T entity)
         {
