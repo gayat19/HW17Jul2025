@@ -1,6 +1,7 @@
 
 using FirstAPI.Contexts;
 using FirstAPI.Interfaces;
+using FirstAPI.Mappers;
 using FirstAPI.Models;
 using FirstAPI.Repositories;
 using FirstAPI.Services;
@@ -27,7 +28,7 @@ namespace FirstAPI
             builder.Services.AddSwaggerGen();
 
 
-
+            builder.Services.AddAutoMapper(typeof(EmployeeSearchMapperProfile));
             builder.Services.AddDbContext<EmployeeManagementContext>(opts =>
             {
                 opts.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
@@ -36,6 +37,7 @@ namespace FirstAPI
             builder.Services.AddScoped<IRepository<int, Employee>, EmployeeRepositoryDB>();
             builder.Services.AddScoped<IRepository<int, Department>, DepartmentRepositoryDb>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+            builder.Services.AddScoped<IEmployeeDashboardService, EmployeeService>();
 
 
             var app = builder.Build();

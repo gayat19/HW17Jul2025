@@ -16,7 +16,7 @@ namespace FirstAPI.Models
         public string Image { get; set; } = string.Empty;
         public int DepartmentId { get; set; }
 
-        public Department? Department { get; set; } = new Department();
+        public Department? Department { get; set; } 
         public ICollection<EmployeeSalary>? Salaries { get; set; }
 
         public Employee()

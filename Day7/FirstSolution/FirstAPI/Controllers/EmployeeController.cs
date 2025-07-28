@@ -1,5 +1,6 @@
 ﻿using FirstAPI.Interfaces;
 using FirstAPI.Models;
+using FirstAPI.Models.DTOs;
 using FirstAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +12,12 @@ namespace FirstAPI.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
+        private readonly IEmployeeDashboardService _dashboardService;
 
-        public EmployeeController(IEmployeeService employeeService)
+        public EmployeeController(IEmployeeService employeeService,IEmployeeDashboardService dashboardService)
         {
             _employeeService = employeeService;
+            _dashboardService = dashboardService;
         }
         [HttpPost]
         public ActionResult<Employee> Create(Employee employee)
@@ -32,7 +35,21 @@ namespace FirstAPI.Controllers
             
         }
 
- 
+        [Route("SearchEmployee")]
+        [HttpPost]
+        public ActionResult<EmployeeSerachResponseDTO> Search(EmployeeSearchRequestDto requestDto)
+        {
+            try
+            {
+                var result = _dashboardService.SeachEmployees(requestDto);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
+    
         [HttpGet]
         public ActionResult<List<Employee>> Get()
         {

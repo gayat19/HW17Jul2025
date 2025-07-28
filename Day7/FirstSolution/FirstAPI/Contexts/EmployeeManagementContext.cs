@@ -16,6 +16,7 @@ namespace FirstAPI.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<Employee>().HasKey(e => e.Id).HasName("PK_Employee_Id");
             modelBuilder.Entity<Employee>()
                 .HasOne(e => e.Department)//navigation object
@@ -43,6 +44,14 @@ namespace FirstAPI.Contexts
                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<EmployeeSalary>().HasKey(es => es.SNo).HasName("PK_EMployeeSalary_ID");
+
+            modelBuilder.Entity<Department>().HasData(
+                new Department { Id = 101, Name = "HR" },
+                new Department { Id = 102, Name = "Admin" }
+                );
+            modelBuilder.Entity<Employee>().HasData(
+                new Employee { Id = 1, Name = "Ramu", Email = "ramu@dubakkur.com", PhoneNumber = "9876543210", DepartmentId = 101 }
+                );
         }
 
     }

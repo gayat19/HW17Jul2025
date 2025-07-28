@@ -148,3 +148,5 @@ C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

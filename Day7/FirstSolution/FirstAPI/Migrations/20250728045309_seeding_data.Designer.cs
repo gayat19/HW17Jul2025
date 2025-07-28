@@ -4,6 +4,7 @@ using FirstAPI.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FirstAPI.Migrations
 {
     [DbContext(typeof(EmployeeManagementContext))]
-    partial class EmployeeManagementContextModelSnapshot : ModelSnapshot
+    [Migration("20250728045309_seeding_data")]
+    partial class seeding_data
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,18 +91,6 @@ namespace FirstAPI.Migrations
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("Employees");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            DateOfBirth = new DateTime(2025, 7, 28, 11, 34, 23, 153, DateTimeKind.Local).AddTicks(8383),
-                            DepartmentId = 101,
-                            Email = "ramu@dubakkur.com",
-                            Image = "",
-                            Name = "Ramu",
-                            PhoneNumber = "9876543210"
-                        });
                 });
 
             modelBuilder.Entity("FirstAPI.Models.EmployeeSalary", b =>
