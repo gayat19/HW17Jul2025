@@ -5,7 +5,7 @@ namespace FirstAPI.Models
 {
     public class EmployeeSalary
     {
-        [Key]
+
         public int SNo { get; set; }
         public int EmployeeId { get; set; }
         public int SalaryId { get; set; }
@@ -13,10 +13,10 @@ namespace FirstAPI.Models
         public float OtherDeductions { get; set; }
         public float OtherCredits { get; set; }
 
-        [ForeignKey("EmployeeId")]
+
         public Employee? Employee { get; set; }
 
-        [ForeignKey("SalaryId")]
+
         public Salary? Salary { get; set; }
     }
 }

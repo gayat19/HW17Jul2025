@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FirstAPI.Migrations
 {
     [DbContext(typeof(EmployeeManagementContext))]
-    [Migration("20250728035621_Salary")]
-    partial class Salary
+    [Migration("20250728042952_employee_salary")]
+    partial class employee_salary
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,8 @@ namespace FirstAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_Department_Id");
 
                     b.ToTable("Departments");
                 });
@@ -72,7 +73,8 @@ namespace FirstAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_Employee_Id");
 
                     b.HasIndex("DepartmentId");
 
@@ -102,7 +104,8 @@ namespace FirstAPI.Migrations
                     b.Property<int>("SalaryId")
                         .HasColumnType("int");
 
-                    b.HasKey("SNo");
+                    b.HasKey("SNo")
+                        .HasName("PK_EMployeeSalary_ID");
 
                     b.HasIndex("EmployeeId");
 
@@ -142,8 +145,9 @@ namespace FirstAPI.Migrations
                     b.HasOne("FirstAPI.Models.Department", "Department")
                         .WithMany("Employees")
                         .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Depatment_Employee");
 
                     b.Navigation("Department");
                 });
@@ -153,14 +157,16 @@ namespace FirstAPI.Migrations
                     b.HasOne("FirstAPI.Models.Employee", "Employee")
                         .WithMany("Salaries")
                         .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_EmployeeSalary_Employee");
 
                     b.HasOne("FirstAPI.Models.Salary", "Salary")
                         .WithMany("EmployeeSalaries")
                         .HasForeignKey("SalaryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_EmployeeSalary_Salary");
 
                     b.Navigation("Employee");
 

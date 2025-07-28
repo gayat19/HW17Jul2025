@@ -6,24 +6,23 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FirstAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class Salary : Migration
+    public partial class employee_salary : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Employees_Departments_DepartmentId",
-                table: "Employees");
-
-            migrationBuilder.AlterColumn<int>(
-                name: "DepartmentId",
-                table: "Employees",
-                type: "int",
-                nullable: false,
-                defaultValue: 0,
-                oldClrType: typeof(int),
-                oldType: "int",
-                oldNullable: true);
+            migrationBuilder.CreateTable(
+                name: "Departments",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Department_Id", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "Salaries",
@@ -42,6 +41,30 @@ namespace FirstAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Employees",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DepartmentId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Employee_Id", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Depatment_Employee",
+                        column: x => x.DepartmentId,
+                        principalTable: "Departments",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "EmployeeSalaries",
                 columns: table => new
                 {
@@ -55,20 +78,25 @@ namespace FirstAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EmployeeSalaries", x => x.SNo);
+                    table.PrimaryKey("PK_EMployeeSalary_ID", x => x.SNo);
                     table.ForeignKey(
-                        name: "FK_EmployeeSalaries_Employees_EmployeeId",
+                        name: "FK_EmployeeSalary_Employee",
                         column: x => x.EmployeeId,
                         principalTable: "Employees",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_EmployeeSalaries_Salaries_SalaryId",
+                        name: "FK_EmployeeSalary_Salary",
                         column: x => x.SalaryId,
                         principalTable: "Salaries",
                         principalColumn: "SerialNumber",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Employees_DepartmentId",
+                table: "Employees",
+                column: "DepartmentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_EmployeeSalaries_EmployeeId",
@@ -79,43 +107,22 @@ namespace FirstAPI.Migrations
                 name: "IX_EmployeeSalaries_SalaryId",
                 table: "EmployeeSalaries",
                 column: "SalaryId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Employees_Departments_DepartmentId",
-                table: "Employees",
-                column: "DepartmentId",
-                principalTable: "Departments",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Employees_Departments_DepartmentId",
-                table: "Employees");
-
             migrationBuilder.DropTable(
                 name: "EmployeeSalaries");
 
             migrationBuilder.DropTable(
+                name: "Employees");
+
+            migrationBuilder.DropTable(
                 name: "Salaries");
 
-            migrationBuilder.AlterColumn<int>(
-                name: "DepartmentId",
-                table: "Employees",
-                type: "int",
-                nullable: true,
-                oldClrType: typeof(int),
-                oldType: "int");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Employees_Departments_DepartmentId",
-                table: "Employees",
-                column: "DepartmentId",
-                principalTable: "Departments",
-                principalColumn: "Id");
+            migrationBuilder.DropTable(
+                name: "Departments");
         }
     }
 }

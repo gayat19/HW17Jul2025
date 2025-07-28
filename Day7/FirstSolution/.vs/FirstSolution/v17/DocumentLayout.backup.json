@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728035621_Salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FirstAPI\\Migrations\\20250728035621_Salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728042952_employee_salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FirstAPI\\Migrations\\20250728042952_employee_salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\contexts\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\employeesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,14 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250728035621_Salary.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728035621_Salary.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250728035621_Salary.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728035621_Salary.cs",
-              "RelativeToolTip": "FirstAPI\\Migrations\\20250728035621_Salary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250728042952_employee_salary.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
+              "RelativeToolTip": "FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAQwHAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:56:21.55Z",
+              "WhenOpened": "2025-07-28T04:29:52.501Z",
               "EditorCaption": ""
             },
             {
@@ -61,9 +61,9 @@
               "RelativeDocumentMoniker": "FirstAPI\\Contexts\\EmployeeManagementContext.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Contexts\\EmployeeManagementContext.cs",
               "RelativeToolTip": "FirstAPI\\Contexts\\EmployeeManagementContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:52:25.677Z",
+              "WhenOpened": "2025-07-28T04:21:23.505Z",
               "EditorCaption": ""
             },
             {
@@ -74,14 +74,14 @@
               "RelativeDocumentMoniker": "FirstAPI\\Models\\EmployeeSalary.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\EmployeeSalary.cs",
               "RelativeToolTip": "FirstAPI\\Models\\EmployeeSalary.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T03:45:49.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Salary.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Salary.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Models\\Salary.cs",
@@ -94,13 +94,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Models\\Employee.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
               "RelativeToolTip": "FirstAPI\\Models\\Employee.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T03:43:38.384Z",
               "EditorCaption": ""
@@ -115,8 +115,7 @@
               "RelativeToolTip": "FirstAPI\\Models\\Department.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:43:37.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T03:43:37.278Z"
             }
           ]
         }
