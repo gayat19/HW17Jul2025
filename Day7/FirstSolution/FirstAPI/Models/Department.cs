@@ -11,6 +11,9 @@ namespace FirstAPI.Models
         // ID is primary key by default
         public int Id { get; set; }
         public string Name { get; set; } =string.Empty;
+        public int Status { get; set; }
+
+        public DepartmnetStatusMaster? DepartmnetStatus { get; set; }
 
         public ICollection<Employee>? Employees { get; set; }
 

@@ -3,76 +3,56 @@
   "WorkspaceRootPath": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\interfaces\\idepartmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\idepartmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\employeeaddresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\employeeaddresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\employeestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\employeestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\mappers\\employeesearchmapperprofiel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\mappers\\employeesearchmapperprofiel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\getdepartmnetsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\getdepartmnetsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\firstapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\firstapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\departmentstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\departmentstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\employeesearchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\employeesearchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\employeestatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\employeestatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\interfaces\\iemployeedashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\iemployeedashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\repositories\\employeerepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\employeerepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\employeeserachresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\employeeserachresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728060423_seeding_data_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FirstAPI\\Migrations\\20250728060423_seeding_data_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\employeesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\employeesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250729061843_Empoyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FirstAPI\\Migrations\\20250729061843_Empoyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\contexts\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\contexts\\employeemanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\migrations\\20250728042952_employee_salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\migrations\\20250728042952_employee_salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728045309_seeding_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FirstAPI\\Migrations\\20250728045309_seeding_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250729061653_Empoyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FirstAPI\\Migrations\\20250729061653_Empoyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,236 +70,171 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FirstAPI",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\FirstAPI.csproj",
-              "RelativeDocumentMoniker": "FirstAPI\\FirstAPI.csproj",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\FirstAPI.csproj",
-              "RelativeToolTip": "FirstAPI\\FirstAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-28T09:00:52.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeSearchMapperProfiel.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
-              "RelativeToolTip": "FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T08:59:11.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Services\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Services\\EmployeeService.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Services\\EmployeeService.cs*",
-              "RelativeToolTip": "FirstAPI\\Services\\EmployeeService.cs*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAgwGAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:30:20.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IEmployeeDashboardService.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeDashboardService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IEmployeeDashboardService.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeDashboardService.cs",
-              "RelativeToolTip": "FirstAPI\\Interfaces\\IEmployeeDashboardService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:23:07.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T06:04:47.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\Employee.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Employee.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:43:38.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
-              "RelativeToolTip": "FirstAPI\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T09:06:31.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmployeeSerachResponseDTO.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeSerachResponseDTO.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\DTOs\\EmployeeSerachResponseDTO.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeSerachResponseDTO.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\DTOs\\EmployeeSerachResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:19:18.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "IEmployeeService.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeService.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IEmployeeService.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IEmployeeService.cs",
               "RelativeToolTip": "FirstAPI\\Interfaces\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:22:28.109Z",
+              "WhenOpened": "2025-07-29T06:32:36.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeStatusDTO.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeStatusDTO.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Models\\DTOs\\EmployeeStatusDTO.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeStatusDTO.cs",
+              "RelativeToolTip": "FirstAPI\\Models\\DTOs\\EmployeeStatusDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:30:44.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeSearchMapperProfiel.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
+              "RelativeToolTip": "FirstAPI\\Mappers\\EmployeeSearchMapperProfiel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:28:32.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeAddResponseDTO.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeAddResponseDTO.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Models\\DTOs\\EmployeeAddResponseDTO.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeAddResponseDTO.cs",
+              "RelativeToolTip": "FirstAPI\\Models\\DTOs\\EmployeeAddResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:28:09.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetDepartmnetsDTO.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\GetDepartmnetsDTO.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Models\\DTOs\\GetDepartmnetsDTO.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\GetDepartmnetsDTO.cs",
+              "RelativeToolTip": "FirstAPI\\Models\\DTOs\\GetDepartmnetsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:27:40.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDepartmentServices.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IDepartmentServices.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IDepartmentServices.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Interfaces\\IDepartmentServices.cs",
+              "RelativeToolTip": "FirstAPI\\Interfaces\\IDepartmentServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:26:57.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EmployeeSearchRequestDto.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeSearchRequestDto.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\DTOs\\EmployeeSearchRequestDto.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\EmployeeSearchRequestDto.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\DTOs\\EmployeeSearchRequestDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwAwAAAAnAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
+              "RelativeToolTip": "FirstAPI\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwC8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:14:01.475Z",
+              "WhenOpened": "2025-07-29T06:24:30.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "FirstAPI\\appsettings.json",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\appsettings.json",
-              "RelativeToolTip": "FirstAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-28T06:05:34.265Z",
+              "DocumentIndex": 7,
+              "Title": "DepartmentStatusRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentStatusRepository.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\DepartmentStatusRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\DepartmentStatusRepository.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\DepartmentStatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:22:39.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeRepositoryDB.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\EmployeeRepositoryDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:20:56.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmployeeStatusRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeStatusRepository.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\EmployeeStatusRepository.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Repositories\\EmployeeStatusRepository.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\EmployeeStatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:19:22.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\Department.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Department.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\Department.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Title": "20250729061843_Empoyee.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250729061843_Empoyee.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250729061843_Empoyee.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250729061843_Empoyee.cs",
+              "RelativeToolTip": "FirstAPI\\Migrations\\20250729061843_Empoyee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:43:37.278Z",
+              "WhenOpened": "2025-07-29T06:18:43.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "20250728060423_seeding_data_employee.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728060423_seeding_data_employee.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250728060423_seeding_data_employee.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728060423_seeding_data_employee.cs",
-              "RelativeToolTip": "FirstAPI\\Migrations\\20250728060423_seeding_data_employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Title": "20250729061653_Empoyee.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250729061653_Empoyee.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250729061653_Empoyee.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250729061653_Empoyee.cs",
+              "RelativeToolTip": "FirstAPI\\Migrations\\20250729061653_Empoyee.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T06:04:23.527Z",
+              "WhenOpened": "2025-07-29T06:16:53.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "20250728042952_employee_salary.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
-              "RelativeToolTip": "FirstAPI\\Migrations\\20250728042952_employee_salary.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAQwHwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T04:29:52.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20250728045309_seeding_data.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728045309_seeding_data.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Migrations\\20250728045309_seeding_data.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Migrations\\20250728045309_seeding_data.cs",
-              "RelativeToolTip": "FirstAPI\\Migrations\\20250728045309_seeding_data.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T04:53:09.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "EmployeeManagementContext.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Contexts\\EmployeeManagementContext.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Contexts\\EmployeeManagementContext.cs",
               "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Contexts\\EmployeeManagementContext.cs",
               "RelativeToolTip": "FirstAPI\\Contexts\\EmployeeManagementContext.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAUwDQAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv0MAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T04:21:23.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EmployeeSalary.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\EmployeeSalary.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\EmployeeSalary.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\EmployeeSalary.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\EmployeeSalary.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:45:49.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Salary.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Salary.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Models\\Salary.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\Salary.cs",
-              "RelativeToolTip": "FirstAPI\\Models\\Salary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T03:44:33.412Z",
+              "WhenOpened": "2025-07-29T06:13:08.76Z",
               "EditorCaption": ""
             }
           ]

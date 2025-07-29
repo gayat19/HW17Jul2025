@@ -34,10 +34,18 @@ namespace FirstAPI
                 opts.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
             });
 
+            #region RepositoriesInjection
             builder.Services.AddScoped<IRepository<int, Employee>, EmployeeRepositoryDB>();
             builder.Services.AddScoped<IRepository<int, Department>, DepartmentRepositoryDb>();
+            builder.Services.AddScoped<IRepository<int, EmployeeStatusMaster>, EmployeeStatusRepository>();
+            builder.Services.AddScoped<IRepository<int, DepartmnetStatusMaster>, DepartmentStatusRepository>();
+            #endregion
+
+
+            #region ServicesInjection
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddScoped<IEmployeeDashboardService, EmployeeService>();
+            #endregion
 
 
             var app = builder.Build();

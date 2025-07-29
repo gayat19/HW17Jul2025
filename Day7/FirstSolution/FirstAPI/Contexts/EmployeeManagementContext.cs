@@ -14,6 +14,9 @@ namespace FirstAPI.Contexts
         public DbSet<Salary> Salaries { get; set; }
         public DbSet<EmployeeSalary> EmployeeSalaries { get; set; }
 
+        public DbSet<EmployeeStatusMaster> EmployeeStatusMaster { get; set; }
+        public DbSet<DepartmnetStatusMaster> DepartmnetStatusMasters { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -25,7 +28,18 @@ namespace FirstAPI.Contexts
                 .HasConstraintName("FK_Depatment_Employee")
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Employee>().HasOne(e => e.EmployeeStatus)
+                .WithMany(es => es.Employees)
+                .HasForeignKey(e => e.Status)
+                .HasConstraintName("FK_Employee_Status")
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder.Entity<Department>().HasKey(d => d.Id).HasName("PK_Department_Id");
+            modelBuilder.Entity<Department>().HasOne(e => e.DepartmnetStatus)
+               .WithMany(es => es.Departments)
+               .HasForeignKey(e => e.Status)
+               .HasConstraintName("FK_Department_Status")
+               .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Salary>().HasKey(s => s.SerialNumber).HasName("PK_Salary");
 
@@ -45,12 +59,22 @@ namespace FirstAPI.Contexts
 
             modelBuilder.Entity<EmployeeSalary>().HasKey(es => es.SNo).HasName("PK_EMployeeSalary_ID");
 
+            modelBuilder.Entity<EmployeeStatusMaster>().HasData(
+                new EmployeeStatusMaster { Id=1,Status="Active"},
+                new EmployeeStatusMaster { Id = 2, Status = "InActive" }
+                );
+            modelBuilder.Entity<DepartmnetStatusMaster>().HasData(
+            new DepartmnetStatusMaster { Id = 1, Status = "In-Operation" },
+               new DepartmnetStatusMaster { Id = 2, Status = "Deffered" }
+            );
+
             modelBuilder.Entity<Department>().HasData(
-                new Department { Id = 101, Name = "HR" },
-                new Department { Id = 102, Name = "Admin" }
+                new Department { Id = 101, Name = "HR",Status=1 },
+                new Department { Id = 102, Name = "Admin", Status = 2 }
                 );
             modelBuilder.Entity<Employee>().HasData(
-                new Employee { Id = 1, Name = "Ramu", Email = "ramu@dubakkur.com", PhoneNumber = "9876543210", DepartmentId = 101 }
+                new Employee { Id = 1, Name = "Ramu",DateOfBirth=new DateTime(2000,2,4) , Email = "ramu@dubakkur.com", PhoneNumber = "9876543210", DepartmentId = 101,Status=1 },
+                 new Employee { Id = 2, Name = "Somu", DateOfBirth = new DateTime(2005, 8, 14), Email = "somu@dubakkur.com", PhoneNumber = "4321098765", DepartmentId = 101, Status = 1 }
                 );
         }
 

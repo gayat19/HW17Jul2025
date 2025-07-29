@@ -1,4 +1,5 @@
 ﻿using FirstAPI.Models;
+using FirstAPI.Models.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace FirstAPI.Interfaces
         public Department GetDepartmentWiseEmployees(int departmentId);
 
         public Employee AddEmployee(Employee employee);
+
+        public EmployeeAddResponseDTO GetDataForAddingEmployee ();
 
 
 

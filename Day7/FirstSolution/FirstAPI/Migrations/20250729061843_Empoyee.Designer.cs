@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FirstAPI.Migrations
 {
     [DbContext(typeof(EmployeeManagementContext))]
-    [Migration("20250728045309_seeding_data")]
-    partial class seeding_data
+    [Migration("20250729061843_Empoyee")]
+    partial class Empoyee
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,8 +37,13 @@ namespace FirstAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("Id")
                         .HasName("PK_Department_Id");
+
+                    b.HasIndex("Status");
 
                     b.ToTable("Departments");
 
@@ -46,12 +51,43 @@ namespace FirstAPI.Migrations
                         new
                         {
                             Id = 101,
-                            Name = "HR"
+                            Name = "HR",
+                            Status = 1
                         },
                         new
                         {
                             Id = 102,
-                            Name = "Admin"
+                            Name = "Admin",
+                            Status = 2
+                        });
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.DepartmnetStatusMaster", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DepartmnetStatusMasters");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Status = "In-Operation"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Status = "Deffered"
                         });
                 });
 
@@ -85,12 +121,41 @@ namespace FirstAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("Id")
                         .HasName("PK_Employee_Id");
 
                     b.HasIndex("DepartmentId");
 
+                    b.HasIndex("Status");
+
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateOfBirth = new DateTime(2000, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DepartmentId = 101,
+                            Email = "ramu@dubakkur.com",
+                            Image = "",
+                            Name = "Ramu",
+                            PhoneNumber = "9876543210",
+                            Status = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DateOfBirth = new DateTime(2005, 8, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DepartmentId = 101,
+                            Email = "somu@dubakkur.com",
+                            Image = "",
+                            Name = "Somu",
+                            PhoneNumber = "4321098765",
+                            Status = 1
+                        });
                 });
 
             modelBuilder.Entity("FirstAPI.Models.EmployeeSalary", b =>
@@ -126,6 +191,35 @@ namespace FirstAPI.Migrations
                     b.ToTable("EmployeeSalaries");
                 });
 
+            modelBuilder.Entity("FirstAPI.Models.EmployeeStatusMaster", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmployeeStatusMaster");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Status = "Active"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Status = "InActive"
+                        });
+                });
+
             modelBuilder.Entity("FirstAPI.Models.Salary", b =>
                 {
                     b.Property<int>("SerialNumber")
@@ -152,6 +246,18 @@ namespace FirstAPI.Migrations
                     b.ToTable("Salaries");
                 });
 
+            modelBuilder.Entity("FirstAPI.Models.Department", b =>
+                {
+                    b.HasOne("FirstAPI.Models.DepartmnetStatusMaster", "DepartmnetStatus")
+                        .WithMany("Departments")
+                        .HasForeignKey("Status")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Department_Status");
+
+                    b.Navigation("DepartmnetStatus");
+                });
+
             modelBuilder.Entity("FirstAPI.Models.Employee", b =>
                 {
                     b.HasOne("FirstAPI.Models.Department", "Department")
@@ -161,7 +267,16 @@ namespace FirstAPI.Migrations
                         .IsRequired()
                         .HasConstraintName("FK_Depatment_Employee");
 
+                    b.HasOne("FirstAPI.Models.EmployeeStatusMaster", "EmployeeStatus")
+                        .WithMany("Employees")
+                        .HasForeignKey("Status")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Employee_Status");
+
                     b.Navigation("Department");
+
+                    b.Navigation("EmployeeStatus");
                 });
 
             modelBuilder.Entity("FirstAPI.Models.EmployeeSalary", b =>
@@ -190,9 +305,19 @@ namespace FirstAPI.Migrations
                     b.Navigation("Employees");
                 });
 
+            modelBuilder.Entity("FirstAPI.Models.DepartmnetStatusMaster", b =>
+                {
+                    b.Navigation("Departments");
+                });
+
             modelBuilder.Entity("FirstAPI.Models.Employee", b =>
                 {
                     b.Navigation("Salaries");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.EmployeeStatusMaster", b =>
+                {
+                    b.Navigation("Employees");
                 });
 
             modelBuilder.Entity("FirstAPI.Models.Salary", b =>

@@ -3,6 +3,7 @@
 
 using FirstAPI.Models;
 using FirstAPI.Models.DTOs;
+using Microsoft.EntityFrameworkCore.Migrations.Operations.Builders;
 
 namespace FirstAPI.Mappers
 {
@@ -15,6 +16,12 @@ namespace FirstAPI.Mappers
                 .ForMember(dest => dest.Phone, opt => opt.MapFrom(src => src.PhoneNumber));
             CreateMap< EmployeeSerachResponseDTO,Employee>()
                .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.Phone));
+
+            CreateMap<Department, GetDepartmnetsDTO>();
+            CreateMap<GetDepartmnetsDTO,Department>();
+
+            CreateMap<EmployeeStatusMaster,EmployeeStatusDTO>();
+            CreateMap<EmployeeStatusDTO,EmployeeStatusMaster >();
         }
     }
 }
