@@ -5,7 +5,10 @@ using FirstAPI.Mappers;
 using FirstAPI.Models;
 using FirstAPI.Repositories;
 using FirstAPI.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace FirstAPI
 {
@@ -28,11 +31,29 @@ namespace FirstAPI
             builder.Services.AddSwaggerGen();
 
 
+
+
             builder.Services.AddAutoMapper(typeof(EmployeeSearchMapperProfile));
             builder.Services.AddDbContext<EmployeeManagementContext>(opts =>
             {
                 opts.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
             });
+
+
+            //authentication filter / pipe
+            #region Authentication
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options=> {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey =true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Tokens:JWT"]))
+                    };
+                });
+            #endregion
 
             #region RepositoriesInjection
             builder.Services.AddScoped<IRepository<int, Employee>, EmployeeRepositoryDB>();
@@ -47,6 +68,7 @@ namespace FirstAPI
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddScoped<IEmployeeDashboardService, EmployeeService>();
             builder.Services.AddScoped<IAuthenticate, AuthenticationService>();
+            builder.Services.AddScoped<ITokenService, TokenService>();
             #endregion
 
 
@@ -58,6 +80,7 @@ namespace FirstAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

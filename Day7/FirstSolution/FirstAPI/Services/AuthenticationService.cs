@@ -15,6 +15,7 @@ namespace FirstAPI.Services
         IRepository<int, Employee> _employeeRepository;
         private readonly IRepository<int, EmployeeStatusMaster> _employeeStatusMaster;
         private readonly IEmployeeService _employeeService;
+        private readonly ITokenService _tokenService;
         private readonly IRepository<string, User> _userRepository;
         private readonly IMapper _mapper;
         IRepository<int, Department> _departmentRepository;
@@ -23,13 +24,15 @@ namespace FirstAPI.Services
         IRepository<string,User> userRepository,
          IRepository<int, EmployeeStatusMaster> employeeStatusMaster,
          IEmployeeService employeeService,
+         ITokenService tokenService,
         IMapper mapper)
         {
             _departmentRepository = departmentRepository;
             _employeeRepository = employeeRepository;
             _employeeStatusMaster = employeeStatusMaster;
-            _employeeService = employeeService;
             _userRepository = userRepository;
+            _employeeService = employeeService;
+            _tokenService = tokenService;
             _mapper = mapper;
         }
         public LoginResponseDTO Login(LoginRequestDTO loginRequest)
@@ -47,7 +50,7 @@ namespace FirstAPI.Services
             return new LoginResponseDTO
             {
                 Username = loginRequest.Username,
-                Token = ""
+                Token = _tokenService.GenerateToken(new TokenUser { Username=loginRequest.Username,Role=dbUser.Role })
             };
         }
 

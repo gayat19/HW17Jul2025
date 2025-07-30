@@ -2,6 +2,7 @@
 using FirstAPI.Models;
 using FirstAPI.Models.DTOs;
 using FirstAPI.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -45,6 +46,7 @@ namespace FirstAPI.Controllers
 
         [Route("SearchEmployee")]
         [HttpPost]
+        [Authorize]
         public ActionResult<EmployeeSerachResponseDTO> Search(EmployeeSearchRequestDto requestDto)
         {
             try
