@@ -61,6 +61,7 @@ namespace FirstAPI.Controllers
         }
     
         [HttpGet]
+        [Authorize(Roles ="Admin")]
         public ActionResult<List<Employee>> Get()
         {
             try
