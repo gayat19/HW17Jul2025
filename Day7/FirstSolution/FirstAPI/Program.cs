@@ -17,12 +17,12 @@ namespace FirstAPI
 
             // Add services to the container.
 
-            builder.Services.AddControllers()
-                  .AddJsonOptions(options =>
-                  {
-                      options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-                      options.JsonSerializerOptions.WriteIndented = true;
-                  });
+            builder.Services.AddControllers();
+                  //.AddJsonOptions(options =>
+                  //{
+                  //    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                  //    options.JsonSerializerOptions.WriteIndented = true;
+                  //});
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -39,12 +39,14 @@ namespace FirstAPI
             builder.Services.AddScoped<IRepository<int, Department>, DepartmentRepositoryDb>();
             builder.Services.AddScoped<IRepository<int, EmployeeStatusMaster>, EmployeeStatusRepository>();
             builder.Services.AddScoped<IRepository<int, DepartmnetStatusMaster>, DepartmentStatusRepository>();
+            builder.Services.AddScoped<IRepository<string,User>,UserRepository>();
             #endregion
 
 
             #region ServicesInjection
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddScoped<IEmployeeDashboardService, EmployeeService>();
+            builder.Services.AddScoped<IAuthenticate, AuthenticationService>();
             #endregion
 
 

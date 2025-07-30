@@ -16,14 +16,17 @@ namespace FirstAPI.Services
     public class EmployeeService : IEmployeeService, IEmployeeDashboardService
     {
         IRepository<int, Employee> _employeeRepository;
+        private readonly IRepository<int, EmployeeStatusMaster> _employeeStatusMaster;
         private readonly IMapper _mapper;
         IRepository<int, Department> _departmentRepository;
         public EmployeeService(IRepository<int, Employee> employeeRepository,
         IRepository<int, Department> departmentRepository,
+         IRepository<int, EmployeeStatusMaster> employeeStatusMaster,
         IMapper mapper)
         {
             _departmentRepository = departmentRepository;
             _employeeRepository = employeeRepository;
+            _employeeStatusMaster = employeeStatusMaster;
             _mapper = mapper;
         }
         public Employee AddEmployee(Employee employee)
@@ -31,18 +34,30 @@ namespace FirstAPI.Services
             Department department=null;
             try
             {
-                department = _departmentRepository.GetById(employee.Department.Id);
+               department = _departmentRepository.GetById(employee.Department.Id);
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
             }
             if (department == null)
             {
                 //employee.Department.Id = GenerateNextDepartmentId();
-                _departmentRepository.Add(employee.Department);
+                employee.Department.Status = 1;
+                employee.Department = _departmentRepository.Add(employee.Department);
+                employee.DepartmentId = employee.Department.Id;
+                employee.Department = null;
             }
+            else
+            {
+                if (department.Status != 1)
+                    department = null;
+                employee.DepartmentId = department.Id;
+                employee.Department = null;
+            }
+               
             //employee.Id = GenerateNextEmployeeId();
-            _employeeRepository.Add(employee);
+            employee = _employeeRepository.Add(employee);
             return employee;
         }
        
@@ -72,6 +87,7 @@ namespace FirstAPI.Services
         public ICollection<EmployeeSerachResponseDTO> SeachEmployees(EmployeeSearchRequestDto request)
         {
             var employees = _employeeRepository.GetAll();
+            employees = employees.Where(e => e.Status == 1);//To check on the employee active status
             if (employees.Count() > 0 && request.PhoneNumber != null)
                 employees = SearchEmployeeByPhone(employees, request.PhoneNumber);
             if (employees.Count() > 0 && request.Name != null)
@@ -147,6 +163,17 @@ namespace FirstAPI.Services
             name = name.ToLower();
             var result = employees.Where(emp => emp.Name.ToLower().Contains(name)).ToList();
             return result;
+        }
+
+        public EmployeeAddResponseDTO GetDataForAddingEmployee()
+        {
+            EmployeeAddResponseDTO employeeAddResponseDTO = new EmployeeAddResponseDTO();
+            var status = _employeeStatusMaster.GetAll();
+            employeeAddResponseDTO.EmployeeStatuses =  _mapper.Map<ICollection<EmployeeStatusDTO>>(status);
+            var departmnets = _departmentRepository.GetAll();
+            employeeAddResponseDTO.Departments = _mapper.Map<ICollection<GetDepartmnetsDTO>>(departmnets);
+            return employeeAddResponseDTO;
+
         }
     }
 }

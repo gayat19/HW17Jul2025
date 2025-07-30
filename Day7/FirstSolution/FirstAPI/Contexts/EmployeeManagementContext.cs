@@ -17,8 +17,15 @@ namespace FirstAPI.Contexts
         public DbSet<EmployeeStatusMaster> EmployeeStatusMaster { get; set; }
         public DbSet<DepartmnetStatusMaster> DepartmnetStatusMasters { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>().HasKey(u=>u.Username);
+            modelBuilder.Entity<User>().HasOne(u => u.Employee)
+                .WithOne(e => e.User)
+                .HasForeignKey<User>(u => u.EmployeeNumber)
+                .HasConstraintName("FK_USerEmployee");
 
             modelBuilder.Entity<Employee>().HasKey(e => e.Id).HasName("PK_Employee_Id");
             modelBuilder.Entity<Employee>()

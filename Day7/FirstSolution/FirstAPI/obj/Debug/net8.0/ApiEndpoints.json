@@ -1,5 +1,57 @@
 [
   {
+    "ContainingType": "FirstAPI.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/Authentication/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "FirstAPI.Models.DTOs.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FirstAPI.Models.DTOs.LoginResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstAPI.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "api/Authentication/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "FirstAPI.Models.DTOs.AddEmployeeRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FirstAPI.Models.DTOs.AddEmployeeResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FirstAPI.Controllers.EmployeeController",
     "Method": "Create",
     "RelativePath": "api/Employee",
@@ -47,6 +99,26 @@
   },
   {
     "ContainingType": "FirstAPI.Controllers.EmployeeController",
+    "Method": "AddResponse",
+    "RelativePath": "api/Employee/GetAddMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "FirstAPI.Models.DTOs.EmployeeAddResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstAPI.Controllers.EmployeeController",
     "Method": "Search",
     "RelativePath": "api/Employee/SearchEmployee",
     "HttpMethod": "POST",
@@ -70,26 +142,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "FirstAPI.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstAPI.WeatherForecast, FirstAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

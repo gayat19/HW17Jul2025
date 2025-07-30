@@ -19,6 +19,14 @@ namespace FirstAPI.Controllers
             _employeeService = employeeService;
             _dashboardService = dashboardService;
         }
+
+        [HttpGet("GetAddMaster")]
+        public ActionResult<EmployeeAddResponseDTO> AddResponse()
+        {
+            var result = _employeeService.GetDataForAddingEmployee();
+            return result;
+        }
+
         [HttpPost]
         public ActionResult<Employee> Create(Employee employee)
         {

@@ -17,6 +17,8 @@ namespace FirstAPI.Interfaces
 
         public EmployeeAddResponseDTO GetDataForAddingEmployee ();
 
+       
+
 
 
     }

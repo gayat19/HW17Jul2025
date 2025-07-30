@@ -22,6 +22,18 @@ namespace FirstAPI.Mappers
 
             CreateMap<EmployeeStatusMaster,EmployeeStatusDTO>();
             CreateMap<EmployeeStatusDTO,EmployeeStatusMaster >();
+
+            CreateMap<LoginResponseDTO, User>();
+            CreateMap< User, LoginResponseDTO>();
+
+
+            CreateMap<Employee, AddEmployeeRequestDTO>();
+            CreateMap<AddEmployeeRequestDTO,Employee >();
+
+            CreateMap<AddEmployeeRequestDTO, User>();
+            CreateMap<User,AddEmployeeRequestDTO>();
+
+     
         }
     }
 }

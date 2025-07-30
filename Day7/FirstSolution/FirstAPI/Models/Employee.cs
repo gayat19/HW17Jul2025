@@ -20,6 +20,8 @@ namespace FirstAPI.Models
 
         public EmployeeStatusMaster? EmployeeStatus { get; set; }
 
+        public User? User { get; set; }
+
         public Department? Department { get; set; } 
         public ICollection<EmployeeSalary>? Salaries { get; set; }
 
@@ -66,13 +68,6 @@ namespace FirstAPI.Models
             return this.Id == other?.Id && this.Name == other?.Name;
         }
 
-        public static bool operator==(Employee e1, Employee e2)
-        {
-            return e1.Id == e2.Id;
-        }
-        public static bool operator !=(Employee e1, Employee e2)
-        {
-            return e1.Id != e2.Id;
-        }
+       
     }
 }

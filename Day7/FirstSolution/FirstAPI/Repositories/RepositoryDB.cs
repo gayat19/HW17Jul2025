@@ -14,6 +14,7 @@ namespace FirstAPI.Repositories
         }
         public T Add(T entity)
         {
+            _context.ChangeTracker.Clear();
             _context.Add(entity);//Adds the entry to the current collection. Marks teh status of teh entry to added
             _context.SaveChanges();//Creates the insert query with the new value and executes it.
             return entity;//new object withteh identity will be provided
@@ -21,6 +22,7 @@ namespace FirstAPI.Repositories
 
         public T Delete(K key)
         {
+            _context.ChangeTracker.Clear();
             var obj = GetById(key);//Gets teh object withteh ID
             _context.Remove(obj);//Identifies teh object within teh colelction, marks teh status to deleted
             _context.SaveChanges();//Generates the delete queryby default cascading delete
@@ -34,6 +36,7 @@ namespace FirstAPI.Repositories
 
         public T Update(K key, T entity)
         {
+            _context.ChangeTracker.Clear();
             var obj= GetById(key);
             _context.Entry<T>(obj).CurrentValues.SetValues(entity);
             _context.SaveChanges();
