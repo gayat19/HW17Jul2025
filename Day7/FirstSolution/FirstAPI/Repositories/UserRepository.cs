@@ -1,5 +1,6 @@
 ﻿using FirstAPI.Contexts;
 using FirstAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstAPI.Repositories
 {
@@ -9,14 +10,14 @@ namespace FirstAPI.Repositories
         {
             
         }
-        public override IEnumerable<User> GetAll()
+        public async override Task<IEnumerable<User>> GetAll()
         {
             return _context.Users;
         }
 
-        public override User GetById(string key)
+        public async override Task<User> GetById(string key)
         {
-            var result = _context.Users.SingleOrDefault(u=>u.Username == key);
+            var result = await _context.Users.SingleOrDefaultAsync(u => u.Username == key);
             return result;
         }
     }

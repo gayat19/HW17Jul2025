@@ -10,12 +10,12 @@ namespace FirstAPI.Interfaces
 {
     public interface IEmployeeService
     {
-        public ICollection<Employee> GetEmployees();
-        public Department GetDepartmentWiseEmployees(int departmentId);
+        public Task<ICollection<Employee>> GetEmployees();
+        public Task<Department> GetDepartmentWiseEmployees(int departmentId);
 
-        public Employee AddEmployee(Employee employee);
+        public Task<Employee> AddEmployee(Employee employee);
 
-        public EmployeeAddResponseDTO GetDataForAddingEmployee ();
+        public Task<EmployeeAddResponseDTO> GetDataForAddingEmployee ();
 
        
 

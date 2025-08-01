@@ -16,11 +16,11 @@ namespace FirstAPI.Controllers
             _authenticateService = authenticateService;
         }
         [HttpPost("Register")]
-        public ActionResult<AddEmployeeResponseDTO> Register(AddEmployeeRequestDTO requestDTO)
+        public async Task<ActionResult<AddEmployeeResponseDTO>> Register(AddEmployeeRequestDTO requestDTO)
         {
             try
             {
-                var result = _authenticateService.RegisterEmployee(requestDTO);
+                var result = await _authenticateService.RegisterEmployee(requestDTO);
                 return Created("",result);
             }
             catch (Exception ex)
@@ -29,11 +29,11 @@ namespace FirstAPI.Controllers
             }
         }
         [HttpPost("Login")]
-        public ActionResult<LoginResponseDTO> Login(LoginRequestDTO requestDTO)
+        public async Task<ActionResult<LoginResponseDTO>> Login(LoginRequestDTO requestDTO)
         {
             try
             {
-                var result = _authenticateService.Login(requestDTO);
+                var result = await _authenticateService.Login(requestDTO);
                 return Ok(result);
             }
             catch (Exception ex)

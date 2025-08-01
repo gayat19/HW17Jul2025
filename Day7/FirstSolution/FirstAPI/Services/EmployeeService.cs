@@ -29,12 +29,12 @@ namespace FirstAPI.Services
             _employeeStatusMaster = employeeStatusMaster;
             _mapper = mapper;
         }
-        public Employee AddEmployee(Employee employee)
+        public async Task<Employee> AddEmployee(Employee employee)
         {
             Department department=null;
             try
             {
-               department = _departmentRepository.GetById(employee.Department.Id);
+               department = await _departmentRepository.GetById(employee.Department.Id);
             }
             catch (Exception ex)
             {
@@ -44,7 +44,7 @@ namespace FirstAPI.Services
             {
                 //employee.Department.Id = GenerateNextDepartmentId();
                 employee.Department.Status = 1;
-                employee.Department = _departmentRepository.Add(employee.Department);
+                employee.Department = await _departmentRepository.Add(employee.Department);
                 employee.DepartmentId = employee.Department.Id;
                 employee.Department = null;
             }
@@ -57,68 +57,68 @@ namespace FirstAPI.Services
             }
                
             //employee.Id = GenerateNextEmployeeId();
-            employee = _employeeRepository.Add(employee);
+            employee = await _employeeRepository.Add(employee);
             return employee;
         }
        
-        public Department GetDepartmentWiseEmployees(int departmentId)
+        public async Task<Department> GetDepartmentWiseEmployees(int departmentId)
         {
-            var department = _departmentRepository.GetById(departmentId);
+            var department = await _departmentRepository.GetById(departmentId);
             if (department == null)
                 throw new NoSuchEntityException();
-            var employees = _employeeRepository.GetAll();
+            var employees = await _employeeRepository.GetAll();
             if (employees == null || employees.Count() == 0)
                 throw new NoEntriessInCollectionException();
-            var departmentemployee = employees.Where(e=>e.Department.Id == departmentId);
+            var departmentemployee = employees.Where(e => e.Department.Id == departmentId).ToList();
             if (departmentemployee == null || departmentemployee.Count() == 0)
                 throw new NoEntriessInCollectionException();
             department.Employees = employees.ToList();
             return department;
         }
 
-        public ICollection<Employee> GetEmployees()
+        public async Task<ICollection<Employee>> GetEmployees()
         {
-            var employees = _employeeRepository.GetAll();
+            var employees = await _employeeRepository.GetAll();
             if (employees == null || employees.Count() == 0)
                 throw new NoEntriessInCollectionException();
             return employees.ToList();
         }
 
-        public ICollection<EmployeeSerachResponseDTO> SeachEmployees(EmployeeSearchRequestDto request)
+        public async Task<ICollection<EmployeeSerachResponseDTO>> SeachEmployees(EmployeeSearchRequestDto request)
         {
-            var employees = _employeeRepository.GetAll();
+            var employees = await _employeeRepository.GetAll();
             employees = employees.Where(e => e.Status == 1);//To check on the employee active status
             if (employees.Count() > 0 && request.PhoneNumber != null)
-                employees = SearchEmployeeByPhone(employees, request.PhoneNumber);
+                employees = await SearchEmployeeByPhone(employees, request.PhoneNumber);
             if (employees.Count() > 0 && request.Name != null)
-                employees = SeacrhEmployeeByName(employees, request.Name);
+                employees = await SeacrhEmployeeByName(employees, request.Name);
             if(employees.Count() > 0 && request.Departments != null && request.Departments.Count()>0)
-                employees = SerchByDepartmnets(employees, request.Departments);
+                employees = await SerchByDepartmnets(employees, request.Departments);
             if(employees.Count() > 0 && request.DateOfBirth != null)
-                employees = SearchEmployeesByDOB(employees, request.DateOfBirth);
+                employees = await SearchEmployeesByDOB(employees, request.DateOfBirth);
             if(employees.Count()>0 && request.Sort !=0)
-               employees =  SortEmployee(employees, request.Sort);
+               employees =  await SortEmployee(employees, request.Sort);
             if (employees.Count() > 0)
             {
-                var result = PopulateDepartmentName(employees);
+                var result = await PopulateDepartmentName(employees);
                 return result;
             }
             throw new Exception("No result found");
         }
 
-        private ICollection<EmployeeSerachResponseDTO> PopulateDepartmentName(IEnumerable<Employee> result)
+        private async Task<ICollection<EmployeeSerachResponseDTO>> PopulateDepartmentName(IEnumerable<Employee> result)
         {
            var data = new List<EmployeeSerachResponseDTO>();
             foreach (var employee in result)
             {
                 var employeeRes = _mapper.Map<EmployeeSerachResponseDTO>(employee);
-                employeeRes.Department_Name = _departmentRepository.GetById(employee.DepartmentId).Name;
+                employeeRes.Department_Name = (await _departmentRepository.GetById(employee.DepartmentId)).Name;
                 data.Add(employeeRes);
             }
             return data;
         }
 
-        private IEnumerable<Employee> SortEmployee(IEnumerable<Employee> employees, int sort)
+        private async Task<IEnumerable<Employee>> SortEmployee(IEnumerable<Employee> employees, int sort)
         {
             switch (sort)
             {
@@ -140,37 +140,39 @@ namespace FirstAPI.Services
             return employees;
         }
 
-        private IEnumerable<Employee> SearchEmployeesByDOB(IEnumerable<Employee> employees, SearchRange<DateTime> dateOfBirth)
+        private async Task<IEnumerable<Employee>> SearchEmployeesByDOB(IEnumerable<Employee> employees, SearchRange<DateTime> dateOfBirth)
         {
             var result = employees.Where(emp => emp.DateOfBirth >= dateOfBirth.MinValue && emp.DateOfBirth <= dateOfBirth.MaxValue).ToList();
             return result;
         }
 
-        private IEnumerable<Employee> SearchEmployeeByPhone(IEnumerable<Employee> employees, string phoneNumber)
+        private async Task<IEnumerable<Employee>> SearchEmployeeByPhone(IEnumerable<Employee> employees, string phoneNumber)
         {
             var result = employees.Where(emp => emp.PhoneNumber == phoneNumber).ToList();
             return result;
         }
 
-        private IEnumerable<Employee> SerchByDepartmnets(IEnumerable<Employee> employees, List<int> departments)
+        private async Task<IEnumerable<Employee>> SerchByDepartmnets(IEnumerable<Employee> employees, List<int> departments)
         {
-            var result = employees.Where(emp => departments.Contains(emp.Id)).ToList();
+            var result = new List<Employee>();
+            foreach (var dep in departments) 
+                result.AddRange(employees.Where(e => e.DepartmentId == dep).ToList());
             return result;
         }
 
-        private IEnumerable<Employee> SeacrhEmployeeByName(IEnumerable<Employee> employees, string name)
+        private async Task<IEnumerable<Employee>> SeacrhEmployeeByName(IEnumerable<Employee> employees, string name)
         {
             name = name.ToLower();
             var result = employees.Where(emp => emp.Name.ToLower().Contains(name)).ToList();
             return result;
         }
 
-        public EmployeeAddResponseDTO GetDataForAddingEmployee()
+        public async Task<EmployeeAddResponseDTO> GetDataForAddingEmployee()
         {
             EmployeeAddResponseDTO employeeAddResponseDTO = new EmployeeAddResponseDTO();
-            var status = _employeeStatusMaster.GetAll();
+            var status = await _employeeStatusMaster.GetAll();
             employeeAddResponseDTO.EmployeeStatuses =  _mapper.Map<ICollection<EmployeeStatusDTO>>(status);
-            var departmnets = _departmentRepository.GetAll();
+            var departmnets = await _departmentRepository.GetAll();
             employeeAddResponseDTO.Departments = _mapper.Map<ICollection<GetDepartmnetsDTO>>(departmnets);
             return employeeAddResponseDTO;
 

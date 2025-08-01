@@ -22,18 +22,18 @@ namespace FirstAPI.Controllers
         }
 
         [HttpGet("GetAddMaster")]
-        public ActionResult<EmployeeAddResponseDTO> AddResponse()
+        public async Task<ActionResult<EmployeeAddResponseDTO>> AddResponse()
         {
-            var result = _employeeService.GetDataForAddingEmployee();
+            var result = await _employeeService.GetDataForAddingEmployee();
             return result;
         }
 
         [HttpPost]
-        public ActionResult<Employee> Create(Employee employee)
+        public async Task<ActionResult<Employee>> Create(Employee employee)
         {
             try
             {
-                var result = _employeeService.AddEmployee(employee);
+                var result = await _employeeService.AddEmployee(employee);
                 return Created("",result);
             }
             catch (Exception e)
@@ -47,11 +47,11 @@ namespace FirstAPI.Controllers
         [Route("SearchEmployee")]
         [HttpPost]
         [Authorize]
-        public ActionResult<EmployeeSerachResponseDTO> Search(EmployeeSearchRequestDto requestDto)
+        public async Task<ActionResult<EmployeeSerachResponseDTO>> Search(EmployeeSearchRequestDto requestDto)
         {
             try
             {
-                var result = _dashboardService.SeachEmployees(requestDto);
+                var result = await _dashboardService.SeachEmployees(requestDto);
                 return Ok(result);
             }
             catch (Exception e)
@@ -62,11 +62,11 @@ namespace FirstAPI.Controllers
     
         [HttpGet]
         [Authorize(Roles ="Admin")]
-        public ActionResult<List<Employee>> Get()
+        public async Task<ActionResult<List<Employee>>> Get()
         {
             try
             {
-                var result = _employeeService.GetEmployees();
+                var result = await _employeeService.GetEmployees();
                 return Ok(result);
             }
             catch (Exception e)

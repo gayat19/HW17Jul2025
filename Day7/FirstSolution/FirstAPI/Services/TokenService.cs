@@ -16,7 +16,7 @@ namespace FirstAPI.Services
             string secret = configuration["Tokens:JWT"] ?? "".ToString();
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
         }
-        public string GenerateToken(TokenUser user)
+        public async Task<string> GenerateToken(TokenUser user)
         {
             //Payload
             var claims = new List<Claim>

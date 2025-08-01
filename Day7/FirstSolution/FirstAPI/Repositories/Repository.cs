@@ -12,15 +12,15 @@ namespace FirstAPI.Repositories
     {
         protected static List<T> list = new List<T>();
 
-        public T Add(T entity)
+        public async Task<T> Add(T entity)
         {
             list.Add(entity);
             return entity;
         }
 
-        public T Delete(K key)
+        public async Task<T> Delete(K key)
         {
-            var item = GetById(key);
+            var item = await GetById(key);
             if (item != null)
             {
                 list.Remove(item);
@@ -29,18 +29,18 @@ namespace FirstAPI.Repositories
             throw new NoSuchEntityException();
         }
 
-        public IEnumerable<T> GetAll()
+        public async Task<IEnumerable<T>> GetAll()
         {
-            
+
             return list;
         }
 
-        public abstract T GetById(K key);
+        public abstract Task<T> GetById(K key);
  
 
-        public T Update(K key, T entity)
+        public async Task<T> Update(K key, T entity)
         {
-            var item = GetById(key);
+            var item = await GetById(key);
             if (item != null)
             {
                 list.Remove(item);

@@ -4,7 +4,7 @@ namespace FirstAPI.Interfaces
 {
     public interface IAuthenticate
     {
-        public AddEmployeeResponseDTO RegisterEmployee(AddEmployeeRequestDTO employee);
-        public LoginResponseDTO Login(LoginRequestDTO loginRequest);
+        public Task<AddEmployeeResponseDTO> RegisterEmployee(AddEmployeeRequestDTO employee);
+        public Task<LoginResponseDTO> Login(LoginRequestDTO loginRequest);
     }
 }

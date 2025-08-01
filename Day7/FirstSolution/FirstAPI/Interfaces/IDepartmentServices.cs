@@ -4,6 +4,6 @@ namespace FirstAPI.Interfaces
 {
     public interface IDepartmentServices
     {
-        public ICollection<GetDepartmnetsDTO>    GetDepartments { get; set; }
+        public Task<ICollection<GetDepartmnetsDTO>>    GetDepartments { get; set; }
     }
 }

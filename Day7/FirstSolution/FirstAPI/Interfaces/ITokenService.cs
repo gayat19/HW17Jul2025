@@ -4,6 +4,6 @@ namespace FirstAPI.Interfaces
 {
     public interface ITokenService
     {
-        public string GenerateToken(TokenUser user);
+        public  Task<string> GenerateToken(TokenUser user);
     }
 }

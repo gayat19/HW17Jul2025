@@ -1,5 +1,6 @@
 ﻿using FirstAPI.Contexts;
 using FirstAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstAPI.Repositories
 {
@@ -8,14 +9,14 @@ namespace FirstAPI.Repositories
         public EmployeeStatusRepository(EmployeeManagementContext context) : base(context)
         { }
 
-        public override IEnumerable<EmployeeStatusMaster> GetAll()
+        public async override Task<IEnumerable<EmployeeStatusMaster>> GetAll()
         {
             return _context.EmployeeStatusMaster;
         }
 
-        public override EmployeeStatusMaster GetById(int key)
+        public async override Task<EmployeeStatusMaster> GetById(int key)
         {
-            var result = _context.EmployeeStatusMaster.SingleOrDefault(x => x.Id == key);
+            var result = await _context.EmployeeStatusMaster.SingleOrDefaultAsync(x => x.Id == key);
             return result;
         }
     }

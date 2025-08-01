@@ -10,7 +10,7 @@ namespace FirstAPI.Repositories
 {
     public class EmployeeRepository : Repository<int, Employee>
     {
-        public override Employee GetById(int key)
+        public async override Task<Employee> GetById(int key)
         {
             var item= list.FirstOrDefault(x => x.Id == key);
             if (item == null)

@@ -12,34 +12,34 @@ namespace FirstAPI.Repositories
         {
             _context = context;
         }
-        public T Add(T entity)
+        public async Task<T> Add(T entity)
         {
             _context.ChangeTracker.Clear();
             _context.Add(entity);//Adds the entry to the current collection. Marks teh status of teh entry to added
-            _context.SaveChanges();//Creates the insert query with the new value and executes it.
+            await _context.SaveChangesAsync();//Creates the insert query with the new value and executes it.
             return entity;//new object withteh identity will be provided
         }
 
-        public T Delete(K key)
+        public async Task<T> Delete(K key)
         {
             _context.ChangeTracker.Clear();
-            var obj = GetById(key);//Gets teh object withteh ID
+            var obj = await GetById(key);//Gets teh object withteh ID
             _context.Remove(obj);//Identifies teh object within teh colelction, marks teh status to deleted
-            _context.SaveChanges();//Generates the delete queryby default cascading delete
+            await _context.SaveChangesAsync();//Generates the delete queryby default cascading delete
             return obj;//returns the deleted object
         }
 
-        public abstract IEnumerable<T> GetAll();
+        public abstract Task<IEnumerable<T>> GetAll();
 
-        public abstract T GetById(K key);
+        public abstract Task<T> GetById(K key);
         
 
-        public T Update(K key, T entity)
+        public async Task<T> Update(K key, T entity)
         {
             _context.ChangeTracker.Clear();
-            var obj= GetById(key);
+            var obj= await GetById(key);
             _context.Entry<T>(obj).CurrentValues.SetValues(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return entity;
         }
     }

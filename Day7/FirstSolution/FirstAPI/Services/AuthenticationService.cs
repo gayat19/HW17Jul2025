@@ -35,9 +35,9 @@ namespace FirstAPI.Services
             _tokenService = tokenService;
             _mapper = mapper;
         }
-        public LoginResponseDTO Login(LoginRequestDTO loginRequest)
+        public async Task<LoginResponseDTO> Login(LoginRequestDTO loginRequest)
         {
-           var dbUser = _userRepository.GetById(loginRequest.Username);
+           var dbUser = await _userRepository.GetById(loginRequest.Username);
             if (dbUser == null)
                 throw new NoSuchEntityException();
             HMACSHA256 hmacsha256 = new HMACSHA256(dbUser.HashKey);
@@ -50,22 +50,22 @@ namespace FirstAPI.Services
             return new LoginResponseDTO
             {
                 Username = loginRequest.Username,
-                Token = _tokenService.GenerateToken(new TokenUser { Username=loginRequest.Username,Role=dbUser.Role })
+                Token = await _tokenService.GenerateToken(new TokenUser { Username=loginRequest.Username,Role=dbUser.Role })
             };
         }
 
-        public AddEmployeeResponseDTO RegisterEmployee(AddEmployeeRequestDTO employee)
+        public async Task<AddEmployeeResponseDTO> RegisterEmployee(AddEmployeeRequestDTO employee)
         {
             try
             {
                 var newEmployee = _mapper.Map<Employee>(employee);
-                newEmployee = _employeeService.AddEmployee(newEmployee);
+                newEmployee = await _employeeService.AddEmployee(newEmployee);
                 if (newEmployee != null)
                 {
                     employee.Id = newEmployee.Id;
                     var user = PopulateUserObject(employee);
                     user.Role = "User";
-                    user = _userRepository.Add(user);
+                    user = await _userRepository.Add(user);
 
                     return new AddEmployeeResponseDTO { EmployeeId = newEmployee.Id };
                 }
