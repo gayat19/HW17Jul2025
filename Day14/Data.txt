@@ -1,0 +1,52 @@
+Same project
+Edit the department and Employee class to have status
+Add status master table respectively
+Create a business logic that will list the departments and status f- Adding employee screes might require
+Edit the add employee to include status
+
+- 2 hours
+
+
+{
+
+  "name": "Fimu",
+  "dateOfBirth": "2005-06-30T05:19:05.470Z",
+  "email": "fimu@dubakkur.com",
+  "phoneNumber": "1122998877",
+  "image": "",
+  "departmentId": 0,
+  "status": 1,   
+  "department": {
+    "name": "Test4"
+    },
+  "username": "fimu"
+}
+{
+
+  "name": "Lomu",
+  "dateOfBirth": "2002-06-30T05:19:05.470Z",
+  "email": "lomu@dubakkur.com",
+  "phoneNumber": "9887711229",
+  "image": "",
+  "departmentId": 0,
+  "status": 1,   
+  "department": {
+    "name": "Test2"
+    },
+  "username": "lomu"
+}
+
+#12fimu@12
+
+{
+  "username": "fimu",
+  "password": "#12fimu@12"
+}
+
+{
+  "username": "vimu",
+  "password": "#12vimu@12"
+}
+vimu
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImZpbXUiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3NTM4NjY3NDEsImV4cCI6MTc1NDAzOTU0MCwiaWF0IjoxNzUzODY2NzQxfQ.n4snNRf7rRgAaMh-eKi-3iZALQ-AKYZZ7Ie2C1JKVV4

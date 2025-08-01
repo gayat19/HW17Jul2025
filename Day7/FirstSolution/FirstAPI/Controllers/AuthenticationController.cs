@@ -10,10 +10,12 @@ namespace FirstAPI.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticate _authenticateService;
+        private readonly ILogger<AuthenticationController> _logger;
 
-        public AuthenticationController(IAuthenticate authenticateService)
+        public AuthenticationController(IAuthenticate authenticateService,ILogger<AuthenticationController> logger)
         {
             _authenticateService = authenticateService;
+            _logger = logger;
         }
         [HttpPost("Register")]
         public async Task<ActionResult<AddEmployeeResponseDTO>> Register(AddEmployeeRequestDTO requestDTO)
@@ -38,6 +40,7 @@ namespace FirstAPI.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError("Unauthorized access done by username " + requestDTO.Username);
                 return Unauthorized(new ErrorObjectDTO { ErrorNumber = 401, ErrorMessage = "Invalid username or password" });
             }
         }

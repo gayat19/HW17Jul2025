@@ -84,7 +84,7 @@ namespace FirstAPI.Services
             return employees.ToList();
         }
 
-        public async Task<ICollection<EmployeeSerachResponseDTO>> SeachEmployees(EmployeeSearchRequestDto request)
+        public async Task<PaginatedEmployeeResponseDTO> SeachEmployees(EmployeeSearchRequestDto request)
         {
             var employees = await _employeeRepository.GetAll();
             employees = employees.Where(e => e.Status == 1);//To check on the employee active status
@@ -100,9 +100,14 @@ namespace FirstAPI.Services
                employees =  await SortEmployee(employees, request.Sort);
             if (employees.Count() > 0)
             {
+                var totalNumberOfRecords = employees.Count();
                 var result = await PopulateDepartmentName(employees);
-                return result;
+                if(result.Count() <request.PageSize)
+                    return new PaginatedEmployeeResponseDTO { Employees = result.ToList(), TotalNumberOfRecords = result.Count() };
+                result = result.Skip((request.PageNumber - 1) * request.PageSize).Take(request.PageSize).ToList();
+                return new PaginatedEmployeeResponseDTO { Employees = result.ToList(), TotalNumberOfRecords = totalNumberOfRecords,PageNumber= request.PageNumber };
             }
+
             throw new Exception("No result found");
         }
 

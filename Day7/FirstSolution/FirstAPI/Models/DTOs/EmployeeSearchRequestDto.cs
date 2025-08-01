@@ -16,6 +16,9 @@
 
         public string? PhoneNumber { get; set; }
 
+        public int PageNumber { get; set; } = 0;
+        public int PageSize { get; set; } = 5;
+
         //1- By ID asc, -1 - By ID desc, 2- By name asc, -2 - by name desc, 3- By department id asc, -3 by department id desc
 
         public int Sort { get; set; }

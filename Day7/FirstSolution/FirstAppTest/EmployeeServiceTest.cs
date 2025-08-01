@@ -62,11 +62,12 @@ namespace FirstAppTest
             {
                 Name = "test",
                 Departments = new List<int> { 1 },
+                PageSize=10,
                 Sort = 1
             };
             var result = await employeeDashboardService.SeachEmployees(searchObject);
             //Assert
-            Assert.That(result.Count(), Is.EqualTo(2));
+            Assert.That(result.Employees.Count(), Is.EqualTo(2));
         }
 
         [Test]

@@ -1,0 +1,9 @@
+2025-08-01 12:20:55,235 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5064
+2025-08-01 12:20:55,332 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-08-01 12:20:55,335 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-08-01 12:20:55,339 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI
+2025-08-01 12:21:19,763 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (181ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-01 12:21:20,254 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username fimu

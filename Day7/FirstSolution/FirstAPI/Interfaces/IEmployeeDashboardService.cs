@@ -5,6 +5,6 @@ namespace FirstAPI.Interfaces
 {
     public interface IEmployeeDashboardService
     {
-        public Task<ICollection<EmployeeSerachResponseDTO>> SeachEmployees(EmployeeSearchRequestDto request);
+        public Task<PaginatedEmployeeResponseDTO> SeachEmployees(EmployeeSearchRequestDto request);
     }
 }

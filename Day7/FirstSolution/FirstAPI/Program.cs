@@ -59,7 +59,7 @@ namespace FirstAPI
 
 
 
-
+            builder.Logging.AddLog4Net();
             builder.Services.AddAutoMapper(typeof(EmployeeSearchMapperProfile));
             builder.Services.AddDbContext<EmployeeManagementContext>(opts =>
             {

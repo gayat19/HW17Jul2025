@@ -151,3 +151,6 @@ C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\log4net.config
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\log4net.dll
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
