@@ -21,6 +21,23 @@ Edit the add employee to include status
     },
   "username": "fimu"
 }
+
+
+{
+
+  "name": "Fimu",
+  "dateOfBirth": "2005-06-30T05:19:05.470Z",
+  "email": "fimu@dubakkur.com",
+  "phoneNumber": "1122998877",
+  "image": "",
+  "departmentId": 0,
+  "status": 1,   
+  "department": {
+    "name": "Test4"
+    },
+  "username": "fimu"
+}
+
 {
 
   "name": "Lomu",
