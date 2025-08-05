@@ -1,4 +1,5 @@
-﻿using FirstAPI.Interfaces;
+﻿using FirstAPI.Filters;
+using FirstAPI.Interfaces;
 using FirstAPI.Models;
 using FirstAPI.Models.DTOs;
 using FirstAPI.Services;
@@ -10,6 +11,7 @@ namespace FirstAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [CustomExceptionFilter]
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
@@ -24,6 +26,7 @@ namespace FirstAPI.Controllers
         [HttpGet("GetAddMaster")]
         public async Task<ActionResult<EmployeeAddResponseDTO>> AddResponse()
         {
+            throw new NotImplementedException();
             var result = await _employeeService.GetDataForAddingEmployee();
             return result;
         }
@@ -31,16 +34,16 @@ namespace FirstAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Employee>> Create(Employee employee)
         {
-            try
-            {
+            //try
+            //{
                 var result = await _employeeService.AddEmployee(employee);
                 return Created("",result);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                return BadRequest(e.Message);
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //    return BadRequest(e.Message);
+            //}
             
         }
 
