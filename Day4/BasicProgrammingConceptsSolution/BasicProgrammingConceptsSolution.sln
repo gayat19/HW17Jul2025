@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicProgrammingConceptsApp", "BasicProgrammingConceptsApp\BasicProgrammingConceptsApp.csproj", "{5572F2F7-F37E-4656-BCCB-2A7635F79E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDApp", "CRUDApp\CRUDApp.csproj", "{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5572F2F7-F37E-4656-BCCB-2A7635F79E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5572F2F7-F37E-4656-BCCB-2A7635F79E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5572F2F7-F37E-4656-BCCB-2A7635F79E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5572F2F7-F37E-4656-BCCB-2A7635F79E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB674AE-DF3A-47F8-89AD-7875DF69E0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

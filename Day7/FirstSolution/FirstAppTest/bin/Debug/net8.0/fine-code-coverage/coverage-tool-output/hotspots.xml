@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Hotspots>
+  <Hotspot>
+    <Assembly>FirstAPI</Assembly>
+    <Class>FirstAPI.Migrations.EmployeeManagementContextModelSnapshot</Class>
+    <MethodName>BuildModel(...)</MethodName>
+    <ShortName />
+    <Line>17</Line>
+    <FileIndex>0</FileIndex>
+    <Metrics>
+      <Metric>
+        <Name>Cyclomatic complexity</Name>
+        <Exceeded>true</Exceeded>
+        <Value>32</Value>
+      </Metric>
+    </Metrics>
+  </Hotspot>
+  <Hotspot>
+    <Assembly>FirstAPI</Assembly>
+    <Class>FirstAPI.Migrations.user</Class>
+    <MethodName>BuildTargetModel(...)</MethodName>
+    <ShortName />
+    <Line>20</Line>
+    <FileIndex>1</FileIndex>
+    <Metrics>
+      <Metric>
+        <Name>Cyclomatic complexity</Name>
+        <Exceeded>true</Exceeded>
+        <Value>32</Value>
+      </Metric>
+    </Metrics>
+  </Hotspot>
+  <Hotspot>
+    <Assembly>FirstAPI</Assembly>
+    <Class>FirstAPI.Migrations.usertabble</Class>
+    <MethodName>BuildTargetModel(...)</MethodName>
+    <ShortName />
+    <Line>20</Line>
+    <FileIndex>1</FileIndex>
+    <Metrics>
+      <Metric>
+        <Name>Cyclomatic complexity</Name>
+        <Exceeded>true</Exceeded>
+        <Value>32</Value>
+      </Metric>
+    </Metrics>
+  </Hotspot>
+</Hotspots>
