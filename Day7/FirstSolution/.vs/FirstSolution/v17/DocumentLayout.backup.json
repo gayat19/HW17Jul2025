@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\addemployeerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\addemployeerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\filters\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\filters\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\models\\dtos\\addemployeerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\models\\dtos\\addemployeerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\filters\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\filters\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF4A56CB-92EF-4D77-B918-8F93B9C5B400}|FirstAPI\\FirstAPI.csproj|c:\\corp\\gynosys\\hexaware_17jul2025\\participants\\day7\\firstsolution\\firstapi\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -94,11 +94,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AddEmployeeRequestDTO.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Models\\DTOs\\AddEmployeeRequestDTO.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Models\\DTOs\\AddEmployeeRequestDTO.cs",
@@ -106,32 +106,20 @@
               "RelativeToolTip": "FirstAPI\\Models\\DTOs\\AddEmployeeRequestDTO.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T03:49:36.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T03:49:36.771Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CustomExceptionFilter.cs",
-              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Filters\\CustomExceptionFilter.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Filters\\CustomExceptionFilter.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Filters\\CustomExceptionFilter.cs",
-              "RelativeToolTip": "FirstAPI\\Filters\\CustomExceptionFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:08:35.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
-              "RelativeToolTip": "FirstAPI\\Program.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAQwHIAAAAhAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs*",
+              "RelativeToolTip": "FirstAPI\\Program.cs*",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAQwHQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T06:44:02.482Z"
+              "WhenOpened": "2025-08-01T06:44:02.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -159,15 +147,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAUwCkAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\AuthenticationController.cs*",
+              "RelativeToolTip": "FirstAPI\\Controllers\\AuthenticationController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T04:45:50.097Z"
+              "WhenOpened": "2025-08-01T04:45:50.097Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -183,16 +172,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwCoAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Controllers\\EmployeeController.cs*",
+              "RelativeToolTip": "FirstAPI\\Controllers\\EmployeeController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T04:44:42.84Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomExceptionFilter.cs",
+              "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Filters\\CustomExceptionFilter.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Filters\\CustomExceptionFilter.cs",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Filters\\CustomExceptionFilter.cs",
+              "RelativeToolTip": "FirstAPI\\Filters\\CustomExceptionFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:08:35.474Z"
             },
             {
               "$type": "Document",

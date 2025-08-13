@@ -1,5 +1,6 @@
 ﻿using FirstAPI.Interfaces;
 using FirstAPI.Models.DTOs;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace FirstAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("DefaultCORS")]
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticate _authenticateService;

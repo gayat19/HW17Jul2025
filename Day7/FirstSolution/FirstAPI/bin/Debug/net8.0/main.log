@@ -193,3 +193,51 @@ SET NOCOUNT ON;
 INSERT INTO [Employees] ([DateOfBirth], [DepartmentId], [Email], [Image], [Name], [PhoneNumber], [Status])
 OUTPUT INSERTED.[Id]
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-08-13 09:48:56,118 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5064
+2025-08-13 09:48:56,176 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-08-13 09:48:56,181 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-08-13 09:48:56,185 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI
+2025-08-13 09:49:11,004 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (198ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:49:11,312 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username string
+2025-08-13 09:56:09,282 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:56:09,425 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username 
+2025-08-13 09:57:03,845 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:57:04,001 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username 
+2025-08-13 09:57:09,576 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (38ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:57:09,703 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username 
+2025-08-13 09:57:46,351 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:57:46,485 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username 
+2025-08-13 09:58:40,713 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:58:40,885 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username 
+2025-08-13 09:59:11,050 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:59:11,202 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username asdasas
+2025-08-13 09:59:20,430 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 09:59:20,600 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username asdasas
+2025-08-13 10:00:10,105 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0

@@ -4,6 +4,7 @@ using FirstAPI.Models;
 using FirstAPI.Models.DTOs;
 using FirstAPI.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,7 @@ namespace FirstAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [CustomExceptionFilter]
+    [EnableCors("DefaultCORS")]
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;

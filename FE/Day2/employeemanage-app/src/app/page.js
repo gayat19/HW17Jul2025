@@ -1,12 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import 'bootstrap/dist/css/bootstrap.css'
-import Product from "./components/products/product";
+
+import Login from "./components/Login/Login";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-        <Product/>
+        <Login/>
     </div>
   );
 }

@@ -13,7 +13,8 @@ const Product = () => {
     getProducts()
       .then((result) => {
         const list = result?.data?.products ?? [];
-        if (mounted) setProducts(list);
+        if (mounted) 
+            setProducts(list);
       })
       .catch(console.error);
 
@@ -22,32 +23,35 @@ const Product = () => {
       console.log('component gone');
     };
   }, []);
+  
 
   return (
-    <div className="container mt-4">
-      <div className="cards-wrap">
-        {products.map((product) => (
-          <div key={product.id} className="card product-card">
-            <img
-              className="card-img-top"
-              src={product.thumbnail}
-              alt={product.title}
-            />
-            <div className="card-body">
-              <h5 className="card-title">{product.title}</h5>
-              <p className="card-text">{product.description}</p>
-              <button className="btn btn-primary">
-                Buy for ₹{product.price}
-              </button>
+  
+        <div className="container mt-4">
+        <div className="cards-wrap">
+            {
+            products.map((product) => (
+            <div key={product.id} className="card product-card">
+                <img
+                className="card-img-top"
+                src={product.thumbnail}
+                alt={product.title}
+                />
+                <div className="card-body">
+                <h5 className="card-title">{product.title}</h5>
+                <p className="card-text">{product.description}</p>
+                <button className="btn btn-primary">
+                    Buy for ₹{product.price}
+                </button>
+                </div>
             </div>
-          </div>
-        ))}
-
-        {products.length === 0 && (
-          <div className="text-muted p-3">Loading products…</div>
-        )}
-      </div>
+            ))}
+            {products.length===0 &&(<div className="spinner-border text-success" role="status">
+                <span className="sr-only"></span>
+                </div>)}
+        </div>
     </div>
+
   );
 };
 

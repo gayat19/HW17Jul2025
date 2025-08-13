@@ -56,7 +56,11 @@ namespace FirstAPI
                 });
             });
 
-
+            builder.Services.AddCors(options => options.AddPolicy("DefaultCORS", opts => {
+                opts.AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowAnyOrigin();
+            }));
 
 
             builder.Logging.AddLog4Net();
@@ -110,7 +114,7 @@ namespace FirstAPI
             app.UseAuthentication();
 
             app.UseAuthorization();
-
+            app.UseCors("DefaultCORS");
 
             app.MapControllers();
 
