@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { getProducts } from '@/app/services/product.service';
 import './products.css'; // the file above
+import NavBar from '../navbar';
 
 
 const Product = () => {
@@ -28,6 +29,7 @@ const Product = () => {
   return (
   
         <div className="container mt-4">
+          <NavBar/>
         <div className="cards-wrap">
             {
             products.map((product) => (

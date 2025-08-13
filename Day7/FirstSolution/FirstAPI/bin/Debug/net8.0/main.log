@@ -241,3 +241,50 @@ WHERE [u].[Username] = @__key_0
 SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
 FROM [Users] AS [u]
 WHERE [u].[Username] = @__key_0
+2025-08-13 10:22:46,647 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5064
+2025-08-13 10:22:46,694 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-08-13 10:22:46,699 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-08-13 10:22:46,703 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI
+2025-08-13 11:38:48,904 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (209ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 11:38:56,258 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 11:38:56,565 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username fim
+2025-08-13 11:42:42,864 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 11:42:48,799 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 11:42:48,948 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username fim
+2025-08-13 12:05:39,705 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 12:05:39,859 [.NET TP Worker] ERROR FirstAPI.Controllers.AuthenticationController - Unauthorized access done by username 
+2025-08-13 12:27:55,688 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 12:28:09,333 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 12:28:36,428 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 12:28:38,703 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
+2025-08-13 12:28:46,501 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Username], [u].[EmployeeNumber], [u].[HashKey], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__key_0
