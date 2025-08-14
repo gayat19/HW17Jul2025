@@ -114,9 +114,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
-              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs*",
-              "RelativeToolTip": "FirstAPI\\Program.cs*",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAQwHEAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Gynosys\\Hexaware_17Jul2025\\Participants\\Day7\\FirstSolution\\FirstAPI\\Program.cs",
+              "RelativeToolTip": "FirstAPI\\Program.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAQwHEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T06:44:02.482Z",
               "EditorCaption": ""
@@ -155,8 +155,7 @@
               "RelativeToolTip": "FirstAPI\\Controllers\\AuthenticationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T04:45:50.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T04:45:50.097Z"
             },
             {
               "$type": "Document",
@@ -180,8 +179,7 @@
               "RelativeToolTip": "FirstAPI\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T04:44:42.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T04:44:42.84Z"
             },
             {
               "$type": "Document",

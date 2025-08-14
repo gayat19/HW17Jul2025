@@ -1,41 +1,44 @@
+
+
 import { useEffect, useState } from "react"
 import { SearchEmployees } from "../../services/employee.service"
 
+
 const Employees=()=>{
-    const [employees,setEmployees] = useState([])
-   
-    useEffect(()=>{
+        useEffect(()=>{
          const searchObject = {
             "name": "mu",
-            "departments": [
-                1,2,3
-            ],
-            "phoneNumber": "string",
+         
             "pageNumber": 1,
             "pageSize": 2,
             "sort": 1
             }
         SearchEmployees(searchObject)
         .then((result)=>{
-            setEmployees(result.data)
+            //alert('done');
+            console.log(result.data)
+           setEmployees(result.data.employees??[])
         })
         .catch(err=>{
             console.error(err)
         })
 
-        return(()=>{})
+        console.log('Mounted')
 
     },[])
+    const [employees,setEmployees] = useState([])
+    
+
+
+    if (!employees || employees.length === 0) return <div>No result</div>;
     return(<>
     {
-        employees.length === 0 && (<div> No result</div>)
-        
-    }
-    {
         employees.map((employee)=><section key={employee.id}>
-            {employee.id}
+            {employee.name}
         </section>)
     }
 
     </>)
 }
+
+export default Employees;

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './Components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/HOme/Home';
-import { SearchEmployees } from './services/employee.service';
+
+import Employees from './Components/Employees/Employees';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
            <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='login' element ={<Login/>}/>
-             <Route path='emp' element ={<SearchEmployees/>}/>
+             <Route path='emp' element ={<Employees/>}/>
            </Routes>
         </BrowserRouter>
     </div>
