@@ -111,10 +111,11 @@ namespace FirstAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("DefaultCORS");
             app.UseAuthentication();
 
             app.UseAuthorization();
-            app.UseCors("DefaultCORS");
+    
 
             app.MapControllers();
 

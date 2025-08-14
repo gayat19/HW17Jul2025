@@ -3,11 +3,13 @@ import './Login.css';
 import {loginAPICall} from '../../services/login.service';
 import {LoginModel} from '../../Models/login.model';
 import {LoginErrorModel} from '../../Models/loginerror.model';
+import { useNavigate } from "react-router-dom";
 
 const Login = ()=>{
 
     const [user,setUser] = useState(new LoginModel());
     const [errors,setErrors] = useState(new LoginErrorModel());
+    const navigate = useNavigate();
 
     const changeUser=(eventArgs)=>{
         const fieldName = eventArgs.target.name;
@@ -37,6 +39,7 @@ const Login = ()=>{
             sessionStorage.setItem("token",result.data.token);
             sessionStorage.setItem("username",result.data.username)
             alert("Login success");
+            navigate('/emp')
         })
         .catch(err=>{
             console.log(err);

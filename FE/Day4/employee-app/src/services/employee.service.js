@@ -1,0 +1,9 @@
+import axios from '../Interceptors/AuthInterceptor';
+import {baseUrl} from '../environment.dev';
+
+export function SearchEmployees(searchData)
+{
+    console.log(searchData)
+    const url = baseUrl+'Employee/SearchEmployee';
+    return axios.post(url,searchData);
+}

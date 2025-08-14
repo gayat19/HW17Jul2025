@@ -12,8 +12,9 @@ namespace FirstAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [CustomExceptionFilter]
     [EnableCors("DefaultCORS")]
+    [CustomExceptionFilter]
+  
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
