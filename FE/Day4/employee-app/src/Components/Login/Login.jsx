@@ -4,6 +4,7 @@ import {loginAPICall} from '../../services/login.service';
 import {LoginModel} from '../../Models/login.model';
 import {LoginErrorModel} from '../../Models/loginerror.model';
 import { useNavigate } from "react-router-dom";
+import { userlogin } from "../../rxjs/User.Change";
 
 const Login = ()=>{
 
@@ -35,10 +36,11 @@ const Login = ()=>{
             return;
         loginAPICall(user)
         .then(result=>{
-            console.log(result.data)
+
             sessionStorage.setItem("token",result.data.token);
             sessionStorage.setItem("username",result.data.username)
             alert("Login success");
+            userlogin(result.data.username)
             navigate('/emp')
         })
         .catch(err=>{
