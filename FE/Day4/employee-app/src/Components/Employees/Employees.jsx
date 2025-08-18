@@ -2,9 +2,12 @@
 
 import { useEffect, useState } from "react"
 import { SearchEmployees } from "../../services/employee.service"
+import Employee from "./Employee"
 
 
 const Employees=()=>{
+    const [likecount,setLikecount] = useState(0);
+    var likes = [];
         useEffect(()=>{
          const searchObject = {
             "name": "mu",
@@ -15,29 +18,45 @@ const Employees=()=>{
             }
         SearchEmployees(searchObject)
         .then((result)=>{
-            //alert('done');
-            console.log(result.data)
            setEmployees(result.data.employees??[])
         })
         .catch(err=>{
             console.error(err)
         })
 
-        console.log('Mounted')
+
 
     },[])
+
+    const likeChange = (id)=>{
+        let flag = false;
+        for(let i=0;i<likes.length;i++)
+        {
+            if(id==likes[i])
+            {
+                flag =true;
+                break;
+            }
+        }
+        if(!flag)
+        {
+            likes.push(id);
+            setLikecount(likes.length);
+        }
+    }
     const [employees,setEmployees] = useState([])
     
 
 
     if (!employees || employees.length === 0) return <div>No result</div>;
     return(<>
-    {
+     {  
         employees.map((employee)=><section key={employee.id}>
-            {employee.name}
+           <Employee employee={employee} onLikeClick={(eid)=>likeChange(eid)} />
         </section>)
     }
-
+    <hr/>
+     <div>Number od liked employees - {likecount}</div>
     </>)
 }
 

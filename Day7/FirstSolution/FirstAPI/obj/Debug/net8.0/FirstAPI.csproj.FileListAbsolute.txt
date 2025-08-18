@@ -22,12 +22,6 @@ C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets\msbuild.FirstAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets\msbuild.FirstAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.FirstAPI.props
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FirstAPI.props
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FirstAPI.props
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\FirstAPI.csproj.Up2Date
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\FirstAPI.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\refint\FirstAPI.dll
@@ -76,7 +70,6 @@ C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
@@ -154,3 +147,8 @@ C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\log4net.config
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\log4net.dll
 C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Corp\Gynosys\Hexaware_17Jul2025\Participants\Day7\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
