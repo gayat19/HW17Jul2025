@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/HOme/Home';
 
 import Employees from './Components/Employees/Employees';
+import ProtectedRoute from './Components/ProtectedRoute';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
            <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='login' element ={<Login/>}/>
-             <Route path='emp' element ={<Employees/>}/>
+             <Route path='emp' element ={<ProtectedRoute><Employees/></ProtectedRoute>}/>
            </Routes>
         </BrowserRouter>
     </div>
