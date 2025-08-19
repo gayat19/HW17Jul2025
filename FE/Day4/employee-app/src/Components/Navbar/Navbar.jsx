@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { logout, user$ } from "../../rxjs/User.Change";
+import { useAuth } from "../../AuthContext";
 
 export default function NavBar(){
-    const [user,setUser] = useState(undefined);
+    const [userO,setUserO] = useState(undefined);
+    const {user} = useAuth();
    useEffect(()=>{
         const subscriber = user$;
 
@@ -12,9 +14,9 @@ export default function NavBar(){
                 next:(un)=>{
                     console.log(un)
                     if(un !=null)
-                        setUser(un)
+                        setUserO(un)
                     else
-                        setUser(undefined)
+                        setUserO(undefined)
                 }
             }
         )
@@ -24,7 +26,7 @@ export default function NavBar(){
    },[]);
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Navbar</a>
+        <a className="navbar-brand" href="#">Welcome - {user}</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +39,7 @@ export default function NavBar(){
                 <Link to="/emp" className="nav-link">Employees</Link>
             </li>
             {
-                user===undefined?(<li className="nav-item">
+                userO===undefined?(<li className="nav-item">
                 <Link to="/login" className="nav-link">Login</Link>
             </li>):(<li className="nav-item">
                 <Link  onClick={logout}  className="nav-link">Log-out</Link>

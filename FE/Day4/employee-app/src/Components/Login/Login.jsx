@@ -5,12 +5,14 @@ import {LoginModel} from '../../Models/login.model';
 import {LoginErrorModel} from '../../Models/loginerror.model';
 import { useNavigate } from "react-router-dom";
 import { userlogin } from "../../rxjs/User.Change";
+import { useAuth } from "../../AuthContext";
 
 const Login = ()=>{
 
     const [user,setUser] = useState(new LoginModel());
     const [errors,setErrors] = useState(new LoginErrorModel());
     const navigate = useNavigate();
+    const {login} = useAuth();
 
     const changeUser=(eventArgs)=>{
         const fieldName = eventArgs.target.name;
@@ -31,7 +33,7 @@ const Login = ()=>{
                 break;
         }
     }
-    const login=()=>{
+    const handleLogin=()=>{
         if(errors.username.length>0 || errors.password.length>0)
             return;
         loginAPICall(user)
@@ -40,7 +42,8 @@ const Login = ()=>{
             sessionStorage.setItem("token",result.data.token);
             sessionStorage.setItem("username",result.data.username)
             alert("Login success");
-            userlogin(result.data.username)
+            userlogin(result.data.username);
+            login(result.data.username);
             navigate('/emp')
         })
         .catch(err=>{
@@ -63,7 +66,7 @@ const Login = ()=>{
             }
               <label className="form-control">Password</label>
             <input type="password" name="password" value={user.password} onChange={(e)=>changeUser(e)} className="form-control"/>
-            <button className="button btn btn-success" onClick={login}>Login</button> 
+            <button className="button btn btn-success" onClick={handleLogin}>Login</button> 
             <button className= "button btn btn-danger" onClick={cancel}>Cancel</button>
         </section>
     )
