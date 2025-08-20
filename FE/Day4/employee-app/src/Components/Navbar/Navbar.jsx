@@ -2,10 +2,12 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { logout, user$ } from "../../rxjs/User.Change";
 import { useAuth } from "../../AuthContext";
+import { useSelector } from "react-redux";
 
 export default function NavBar(){
     const [userO,setUserO] = useState(undefined);
     const {user} = useAuth();
+    const userDataRedux = useSelector(state=>state.username);
    useEffect(()=>{
         const subscriber = user$;
 
@@ -26,7 +28,7 @@ export default function NavBar(){
    },[]);
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Welcome - {user}</a>
+        <a className="navbar-brand" href="#">Welcome - {userDataRedux}</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>

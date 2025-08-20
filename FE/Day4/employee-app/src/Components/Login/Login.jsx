@@ -6,13 +6,16 @@ import {LoginErrorModel} from '../../Models/loginerror.model';
 import { useNavigate } from "react-router-dom";
 import { userlogin } from "../../rxjs/User.Change";
 import { useAuth } from "../../AuthContext";
+import { useDispatch } from "react-redux";
+import {login} from '../../authSlicer';
 
 const Login = ()=>{
 
     const [user,setUser] = useState(new LoginModel());
     const [errors,setErrors] = useState(new LoginErrorModel());
     const navigate = useNavigate();
-    const {login} = useAuth();
+   // const {login} = useAuth();
+    const dispatch = useDispatch();
 
     const changeUser=(eventArgs)=>{
         const fieldName = eventArgs.target.name;
@@ -43,7 +46,8 @@ const Login = ()=>{
             sessionStorage.setItem("username",result.data.username)
             alert("Login success");
             userlogin(result.data.username);
-            login(result.data.username);
+            //login(result.data.username);
+            dispatch(login({"username":result.data.username}))
             navigate('/emp')
         })
         .catch(err=>{
